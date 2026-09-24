@@ -1,0 +1,16 @@
+# Netlify CLI
+.netlify/
+
+# Impeccable (config local, no compartida)
+.impeccable/config.local.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+~$*
+
+# Editor
+.vscode/
+node_modules/

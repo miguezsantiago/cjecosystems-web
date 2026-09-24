@@ -1,0 +1,21 @@
+# Objetivo General
+
+- Profesionalizar el sitio web actual, acercándolo al estilo de webs de consultoría de referencia (ej. EY)
+- El one page actual transmite imagen amateur
+
+# Pantalla de Inicio
+
+- Nueva pantalla de inicio con imagen o vídeo estilo consultoría
+  - Concepto propuesto: “Fusionar la era de la AI con la consultoría”
+  - Desde ahí, navegación al resto de páginas (Laboraz, Mission & Vision, etc.)
+
+# Sección Los Especialistas
+
+- El desplegable actual se abre varias veces de forma no deseada
+- La descripción actual no convence, hay que reescribirla
+
+# Contenido Pendiente de Definir
+
+- Sección CPC: concepto aún sin concretar
+  - Sí se quiere incluir vídeo en esa sección
+- Resto de páginas internas a desarrollar una vez resuelto el inicio
