@@ -52,7 +52,9 @@ Core concept requested by the partner for the new home: **fusing the AI era with
 - Voice: direct, confident, anti-bureaucratic consulting; addresses the reader as "tú".
 - **Do not name other firms in claims.** The current headline "El rigor de McKinsey. La velocidad de un founder." is to be rewritten without referencing McKinsey or any other brand, keeping the idea (big-firm rigor + founder speed).
 - Reference sites named by the user (EY, Globant, Consultatio, McKinsey) signal the level of professionalism wanted; they are not to be imitated or cited.
-- The previous visual identity (ivory/forest/rose/gold, Archivo) is not binding; the redesign replaces it.
+- The previous visual identity (ivory/forest/rose/gold, Archivo) is not binding; the redesign replaces it. The legacy two-arc mark may be redesigned (confirmed 2026-09-24).
+- **Standing preference (2026-09-24):** the user chose the consulting category standard over unconventional visual worlds. EY, Globant, Consultatio and McKinsey set the craft bar; conventions are to be executed at full quality, not subverted.
+- Avoid AI/sci-fi imagery (robots, neural networks, particles, glow).
 
 ## Evidence on Hand
 
