@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conjunction Ecosystems — Prototipo v3</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F3F0E9">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/v3.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="cje-ring" viewBox="0 0 160 160">
+        <g transform="translate(80,80)" fill="none" stroke-width="26">
+          <circle r="57" stroke="#3F6B52" stroke-dasharray="159.17 199" transform="rotate(180)"/>
+          <circle r="57" stroke="#B5566F" stroke-dasharray="159.17 199" transform="rotate(20)"/>
+        </g>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="hdr" data-hdr>
+    <a class="brand" href="#top" aria-label="Conjunction Ecosystems">
+      <svg class="brand-mark" aria-hidden="true"><use href="#cje-ring"/></svg>
+      <span class="brand-word">Conjunction<span>Ecosystems</span></span>
+    </a>
+    <nav class="hdr-nav" aria-label="Principal">
+      <a href="#modelo">Cómo trabajamos</a>
+      <a href="#lineas">Qué hacemos</a>
+      <a href="/index.html#proyectos">Proyectos</a>
+      <a href="/index.html#equipo">Equipo</a>
+    </nav>
+    <a class="btn" href="/index.html#contacto">Agendar una charla</a>
+  </header>
+
+  <main>
+    <!-- ================= 1. Intro: el video se abre desde el titular ================= -->
+    <section class="intro" id="top" data-scrub="intro" aria-labelledby="intro-title">
+      <div class="intro-stage">
+        <div class="intro-type" data-intro-type>
+          <p class="kicker">Consultoría · Capital · Incubación</p>
+          <h1 id="intro-title" class="mega">
+            <span class="mega-line">Consultoría</span>
+            <span class="mega-line">estratégica <span class="window" data-window aria-hidden="true"></span> para</span>
+            <span class="mega-line">la era de la&nbsp;IA.</span>
+          </h1>
+        </div>
+
+        <div class="intro-video" data-intro-video>
+          <video autoplay muted loop playsinline preload="auto" poster="/assets/img/hero-cdmx-day-1200.jpg">
+            <source src="/assets/video/cdmx-drone-15809011.mp4" type="video/mp4">
+          </video>
+          <div class="intro-over" data-intro-over>
+            <p class="over-lede">El rigor de una firma grande,<br>a la velocidad de un founder.</p>
+            <p class="over-body">Un socio senior potenciado por IA y una red de especialistas que se activa proyecto por proyecto, y que gana cuando tú ganas.</p>
+            <div class="over-actions">
+              <a class="btn btn-lg" href="/index.html#contacto">Agendar una charla</a>
+              <a class="link-ivory" href="#modelo">Cómo trabajamos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="scroll-cue" data-cue aria-hidden="true"><span></span>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ================= 2. Mecanismo: de la pirámide a la red ================= -->
+    <section class="mech" id="modelo" data-scrub="mech" data-step="0" aria-labelledby="mech-title">
+      <div class="mech-stage">
+        <div class="mech-copy">
+          <p class="kicker kicker-forest">01 / Cómo trabajamos</p>
+          <h2 id="mech-title" class="h2">No armamos un equipo de consultoría. Armamos el que tu proyecto necesita.</h2>
+          <ol class="steps">
+            <li class="step" data-s="0"><span class="step-n">A</span><div><h3>La pirámide tradicional</h3><p>Socio, manager, consultor senior y 3–4 analistas. Meses de trabajo y honorarios fijos.</p></div></li>
+            <li class="step" data-s="1"><span class="step-n">B</span><div><h3>Un socio senior al frente</h3><p>La pirámide colapsa en una persona con experiencia que dirige el proyecto de punta a punta.</p></div></li>
+            <li class="step" data-s="2"><span class="step-n">C</span><div><h3>Potenciado por IA</h3><p>Research, modelos y primeros entregables en días, no en semanas.</p></div></li>
+            <li class="step" data-s="3"><span class="step-n">D</span><div><h3>La red se activa cuando hace falta</h3><p>Especialistas que ya resolvieron ese problema entran solo durante el tramo en que suman.</p></div></li>
+            <li class="step" data-s="4"><span class="step-n">E</span><div><h3>Ganamos cuando tú ganas</h3><p>Fee de mantenimiento más equity compartido. No cobramos por horas.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="mech-diagram" aria-hidden="true">
+          <svg viewBox="0 0 600 560" class="diagram">
+            <!-- red: conexiones -->
+            <g class="links">
+              <line x1="300" y1="280" x2="300" y2="70"/>
+              <line x1="300" y1="280" x2="482" y2="175"/>
+              <line x1="300" y1="280" x2="482" y2="385"/>
+              <line x1="300" y1="280" x2="300" y2="490"/>
+              <line x1="300" y1="280" x2="118" y2="385"/>
+              <line x1="300" y1="280" x2="118" y2="175"/>
+            </g>
+            <!-- pirámide tradicional -->
+            <g class="pyramid">
+              <circle cx="300" cy="120" r="16"/>
+              <circle cx="300" cy="200" r="16"/>
+              <circle cx="300" cy="280" r="16"/>
+              <circle cx="210" cy="370" r="16"/><circle cx="270" cy="370" r="16"/><circle cx="330" cy="370" r="16"/><circle cx="390" cy="370" r="16"/>
+              <text x="330" y="125">Socio</text>
+              <text x="330" y="205">Manager</text>
+              <text x="330" y="285">Consultor senior</text>
+              <text x="300" y="420" text-anchor="middle">3–4 analistas</text>
+            </g>
+            <!-- órbita IA -->
+            <g class="orbit">
+              <circle cx="300" cy="280" r="104"/>
+              <circle class="orbit-dot" cx="404" cy="280" r="7"/>
+              <text x="300" y="164" text-anchor="middle" class="orbit-label">IA</text>
+            </g>
+            <!-- núcleo: el anillo C -->
+            <g class="core">
+              <use href="#cje-ring" x="240" y="220" width="120" height="120"/>
+              <text x="300" y="412" text-anchor="middle" class="core-label">Socio senior</text>
+            </g>
+            <!-- nodos de la red (categorías reales de la red) -->
+            <g class="nodes">
+              <g class="node n-forest"><circle cx="300" cy="70" r="30"/><text x="300" y="30" text-anchor="middle">Finanzas y M&amp;A</text></g>
+              <g class="node n-rose"><circle cx="482" cy="175" r="30"/><text x="482" y="135" text-anchor="middle">Legal</text></g>
+              <g class="node n-forest"><circle cx="482" cy="385" r="30"/><text x="482" y="440" text-anchor="middle">Tecnología e IA</text></g>
+              <g class="node n-rose"><circle cx="300" cy="490" r="30"/><text x="300" y="545" text-anchor="middle">Marca y marketing</text></g>
+              <g class="node n-forest"><circle cx="118" cy="385" r="30"/><text x="118" y="440" text-anchor="middle">Arquitectura</text></g>
+              <g class="node n-rose"><circle cx="118" cy="175" r="30"/><text x="118" y="135" text-anchor="middle">Producto</text></g>
+            </g>
+            <!-- equity -->
+            <g class="equity">
+              <circle cx="300" cy="280" r="150"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. Tres líneas: scroll horizontal ================= -->
+    <section class="lines" id="lineas" data-scrub="lines" aria-labelledby="lines-title">
+      <div class="lines-stage">
+        <div class="lines-head">
+          <p class="kicker kicker-rose">02 / Qué hacemos</p>
+          <h2 id="lines-title" class="h2">Tres líneas,<br>un mismo ecosistema.</h2>
+        </div>
+        <div class="track" data-track>
+          <article class="panel">
+            <figure class="panel-media"><img src="/assets/img/hero-cdmx-day-1200.jpg" alt="Vista aérea de la Ciudad de México de día" loading="lazy"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-forest">Strategy</p>
+              <h3 class="panel-title">Consultoría estratégica y management</h3>
+              <p>Un socio senior al frente, no un equipo junior aprendiendo con tu presupuesto. Diagnóstico, modelos financieros, project finance y PMO.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <figure class="panel-media"><img src="/assets/img/reforma-golden-800.jpg" alt="Paseo de la Reforma al atardecer" loading="lazy"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-rose">Capital</p>
+              <h3 class="panel-title">Venture capital con acompañamiento activo</h3>
+              <p>Capital y estructura de fundraising para proyectos que ya validaron algo real. No solo un cheque.</p>
+            </div>
+          </article>
+          <article class="panel">
+            <figure class="panel-media"><img src="/assets/img/projects/tropical-trash-community.jpg" alt="Comunidad de Tropical Trash en Puerto Escondido" loading="lazy"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-forest">Studio</p>
+              <h3 class="panel-title">Incubadora: de la idea a un negocio que se sostiene solo</h3>
+              <p>Tú te dedicas a crear; con la red armamos finanzas, marca, operación y todo lo que el negocio necesita.</p>
+            </div>
+          </article>
+          <div class="panel panel-end">
+            <p class="end-line">Estrategia, capital e incubación no compiten entre sí: <span class="gold">se retroalimentan.</span></p>
+            <a class="btn btn-lg" href="/index.html#contacto">Agendar una charla</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proto-note">
+      <p>Prototipo v3: hero, modelo y líneas. El resto de las secciones se adapta a este lenguaje cuando se apruebe la dirección. <a href="/index.html">Ver la versión anterior completa</a></p>
+    </section>
+  </main>
+
+  <script src="/assets/js/v3.js" defer></script>
+</body>
+</html>
