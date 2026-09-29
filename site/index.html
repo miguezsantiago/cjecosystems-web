@@ -11,16 +11,19 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Conjunction Ecosystems">
+  <meta property="og:locale" content="es_MX">
   <meta property="og:title" content="Conjunction Ecosystems — Consultoría estratégica para la era de la IA">
   <meta property="og:description" content="El rigor de una firma grande, a la velocidad de un founder. Estrategia, capital e incubación.">
   <meta property="og:url" content="https://cjecosystems.com/">
   <meta property="og:image" content="https://cjecosystems.com/assets/img/hero-cdmx-day-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
   <script>document.documentElement.classList.add('js');</script>
 
   <script type="application/ld+json">
@@ -30,6 +33,7 @@
     "name": "Conjunction Ecosystems",
     "alternateName": "CJE",
     "url": "https://cjecosystems.com/",
+    "logo": "https://cjecosystems.com/favicon.svg",
     "email": "hi@cjecosystems.com",
     "areaServed": "MX",
     "description": "Consultoría estratégica, venture capital e incubadora: un socio senior potenciado por IA y una red de especialistas que participa en el resultado de los proyectos."
@@ -37,7 +41,6 @@
   </script>
 </head>
 <body>
-  <!-- Íconos de línea (1.5px, estilo Lucide) y marca -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
       <symbol id="cje-ring" viewBox="0 0 160 160">
@@ -49,7 +52,6 @@
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
       <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
       <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
       <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
       <symbol id="i-trend" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5l-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
       <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6.8 17M12 11.5l5.2 5.5"/></symbol>
@@ -63,497 +65,424 @@
 
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
 
-  <!-- ============ Header ============ -->
-  <header class="site-header" data-header>
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Conjunction Ecosystems, inicio">
-        <svg class="brand-mark" aria-hidden="true"><use href="#cje-ring"/></svg>
-        <span class="brand-word">Conjunction<span class="brand-sub">Ecosystems</span></span>
-      </a>
-
-      <nav class="primary-nav" id="primary-nav" aria-label="Principal">
-        <ul>
-          <li><a href="#servicios" data-i18n="nav.services">Qué hacemos</a></li>
-          <li><a href="#modelo" data-i18n="nav.model">Cómo trabajamos</a></li>
-          <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
-          <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
-          <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-        </ul>
-        <a class="btn btn-primary nav-cta-mobile" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
-      </nav>
-
-      <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Idioma / Language">
-          <button type="button" data-lang="es" aria-pressed="true">ES</button>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <a class="btn btn-primary btn-sm header-cta" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
-          <span class="visually-hidden" data-i18n="a11y.menu">Abrir menú</span>
-          <span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span>
-        </button>
+  <!-- ================= Header ================= -->
+  <header class="hdr" data-hdr>
+    <a class="brand" href="#top" aria-label="Conjunction Ecosystems, inicio">
+      <svg class="brand-mark" aria-hidden="true"><use href="#cje-ring"/></svg>
+      <span class="brand-word">Conjunction<span>Ecosystems</span></span>
+    </a>
+    <nav class="hdr-nav" id="primary-nav" aria-label="Principal">
+      <a href="#modelo" data-i18n="nav.model">Cómo trabajamos</a>
+      <a href="#lineas" data-i18n="nav.services">Qué hacemos</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#equipo" data-i18n="nav.team">Equipo</a>
+      <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+      <a class="btn nav-cta" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
+    </nav>
+    <div class="hdr-actions">
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <a class="btn hdr-cta" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu>
+        <span class="visually-hidden" data-i18n="a11y.menu">Abrir menú</span>
+        <span class="bar"></span><span class="bar"></span>
+      </button>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ Hero ============ -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-head">
-          <div class="hero-title-col">
-            <p class="eyebrow" data-i18n="hero.eyebrow">Consultoría · Capital · Incubación</p>
-            <h1 id="hero-title" class="hero-title">
-              <span class="line" data-i18n="hero.title1">Consultoría estratégica</span>
-              <span class="line" data-i18n="hero.title2">para la era de la&nbsp;IA.</span>
-            </h1>
-            <span class="rule" aria-hidden="true"></span>
-          </div>
-          <div class="hero-copy">
-            <p class="hero-lede"><span data-i18n="hero.sub">El rigor de una firma grande, a la velocidad de un founder.</span> <span class="em-gold" data-i18n="hero.em">Estamos rediseñando la economía de la consultoría.</span></p>
-            <p class="hero-body" data-i18n="hero.lede">Un socio senior potenciado por IA y una red de especialistas que se activa proyecto por proyecto, y que gana cuando tú ganas.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary btn-lg" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
-              <a class="link-arrow" href="#modelo"><span data-i18n="hero.cta2">Cómo trabajamos</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <!-- ================= Intro: el video se abre desde el titular ================= -->
+    <section class="intro" id="top" data-scrub="intro" aria-labelledby="intro-title">
+      <div class="intro-stage">
+        <div class="intro-type">
+          <p class="kicker" data-i18n="hero.eyebrow">Consultoría · Capital · Incubación</p>
+          <h1 id="intro-title" class="mega">
+            <span class="mega-line" data-i18n="v3.t1">Consultoría</span>
+            <span class="mega-line"><span data-i18n="v3.t2a">estratégica</span> <span class="window" data-window aria-hidden="true"></span> <span data-i18n="v3.t2b">para</span></span>
+            <span class="mega-line" data-i18n="v3.t3">la era de la&nbsp;IA.</span>
+          </h1>
+        </div>
+
+        <div class="intro-video" data-intro-video>
+          <video autoplay muted loop playsinline preload="auto" poster="/assets/img/hero-cdmx-day-1200.jpg" aria-hidden="true">
+            <source src="/assets/video/cdmx-drone-15809011.mp4" type="video/mp4">
+          </video>
+          <div class="intro-over">
+            <p class="over-lede"><span data-i18n="ov.l1">El rigor de una firma grande,</span><br><span data-i18n="ov.l2">a la velocidad de un founder.</span></p>
+            <p class="over-body" data-i18n="hero.lede">Un socio senior potenciado por IA y una red de especialistas que se activa proyecto por proyecto, y que gana cuando tú ganas.</p>
+            <div class="over-actions">
+              <a class="btn btn-lg" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
+              <a class="link-ivory" href="#modelo"><span data-i18n="hero.cta2">Cómo trabajamos</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
         </div>
 
-        <figure class="hero-media">
-          <img src="/assets/img/hero-cdmx-day-2400.jpg"
-               srcset="/assets/img/hero-cdmx-day-1200.jpg 1200w, /assets/img/hero-cdmx-day-2400.jpg 2400w"
-               sizes="(min-width: 1376px) 1280px, 100vw"
-               alt="Vista aérea de la Ciudad de México en un día soleado, con los rascacielos de Reforma detrás del bosque de Chapultepec"
-               width="2400" height="1350" fetchpriority="high">
+        <p class="scroll-cue" aria-hidden="true"><span></span>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ================= 01 Mecanismo ================= -->
+    <section class="mech" id="modelo" data-scrub="mech" data-step="0" aria-labelledby="mech-title">
+      <div class="mech-stage">
+        <div class="mech-copy">
+          <p class="kicker kicker-forest"><span>01 /</span> <span data-i18n="eb.model">Cómo trabajamos</span></p>
+          <h2 id="mech-title" class="h2" data-i18n="model.title">No armamos un equipo de consultoría. Armamos el que tu proyecto necesita.</h2>
+          <ol class="steps">
+            <li class="step" data-s="0"><span class="step-n">A</span><div><h3 data-i18n="st.a.h">La pirámide tradicional</h3><p data-i18n="st.a.p">Socio, manager, consultor senior y 3–4 analistas. Meses de trabajo y honorarios fijos.</p></div></li>
+            <li class="step" data-s="1"><span class="step-n">B</span><div><h3 data-i18n="st.b.h">Un socio senior al frente</h3><p data-i18n="st.b.p">La pirámide colapsa en una persona con experiencia que dirige el proyecto de punta a punta.</p></div></li>
+            <li class="step" data-s="2"><span class="step-n">C</span><div><h3 data-i18n="st.c.h">Potenciado por IA</h3><p data-i18n="st.c.p">Research, modelos y primeros entregables en días, no en semanas.</p></div></li>
+            <li class="step" data-s="3"><span class="step-n">D</span><div><h3 data-i18n="st.d.h">La red se activa cuando hace falta</h3><p data-i18n="st.d.p">Especialistas que ya resolvieron ese problema entran solo durante el tramo en que suman.</p></div></li>
+            <li class="step" data-s="4"><span class="step-n">E</span><div><h3 data-i18n="st.e.h">Ganamos cuando tú ganas</h3><p data-i18n="st.e.p">Fee de mantenimiento más equity compartido. No cobramos por horas.</p></div></li>
+          </ol>
+        </div>
+
+        <div class="mech-diagram" aria-hidden="true">
+          <svg viewBox="0 0 600 560" class="diagram">
+            <g class="links">
+              <line x1="300" y1="280" x2="300" y2="70"/>
+              <line x1="300" y1="280" x2="482" y2="175"/>
+              <line x1="300" y1="280" x2="482" y2="385"/>
+              <line x1="300" y1="280" x2="300" y2="490"/>
+              <line x1="300" y1="280" x2="118" y2="385"/>
+              <line x1="300" y1="280" x2="118" y2="175"/>
+            </g>
+            <g class="pyramid">
+              <circle cx="300" cy="120" r="16"/>
+              <circle cx="300" cy="200" r="16"/>
+              <circle cx="300" cy="280" r="16"/>
+              <circle cx="210" cy="370" r="16"/><circle cx="270" cy="370" r="16"/><circle cx="330" cy="370" r="16"/><circle cx="390" cy="370" r="16"/>
+              <text x="330" y="125" data-i18n="dg.partner">Socio</text>
+              <text x="330" y="205">Manager</text>
+              <text x="330" y="285" data-i18n="dg.senior">Consultor senior</text>
+              <text x="300" y="420" text-anchor="middle" data-i18n="dg.analysts">3–4 analistas</text>
+            </g>
+            <g class="orbit">
+              <circle cx="300" cy="280" r="104"/>
+              <circle class="orbit-dot" cx="404" cy="280" r="7"/>
+              <text x="300" y="164" text-anchor="middle" class="orbit-label" data-i18n="dg.ai">IA</text>
+            </g>
+            <g class="core">
+              <use href="#cje-ring" x="240" y="220" width="120" height="120"/>
+              <text x="300" y="412" text-anchor="middle" class="core-label" data-i18n="dg.core">Socio senior</text>
+            </g>
+            <g class="nodes">
+              <g class="node n-forest"><circle cx="300" cy="70" r="30"/><text x="300" y="30" text-anchor="middle" data-i18n="dg.n1">Finanzas y M&amp;A</text></g>
+              <g class="node n-rose"><circle cx="482" cy="175" r="30"/><text x="482" y="135" text-anchor="middle" data-i18n="dg.n2">Legal</text></g>
+              <g class="node n-forest"><circle cx="482" cy="385" r="30"/><text x="482" y="440" text-anchor="middle" data-i18n="dg.n3">Tecnología e IA</text></g>
+              <g class="node n-rose"><circle cx="300" cy="490" r="30"/><text x="300" y="545" text-anchor="middle" data-i18n="dg.n4">Marca y marketing</text></g>
+              <g class="node n-forest"><circle cx="118" cy="385" r="30"/><text x="118" y="440" text-anchor="middle" data-i18n="dg.n5">Arquitectura</text></g>
+              <g class="node n-rose"><circle cx="118" cy="175" r="30"/><text x="118" y="135" text-anchor="middle" data-i18n="dg.n6">Producto</text></g>
+            </g>
+            <g class="equity"><circle cx="300" cy="280" r="150"/></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 Líneas: scroll horizontal ================= -->
+    <section class="lines" id="lineas" data-scrub="lines" aria-labelledby="lines-title">
+      <div class="lines-stage">
+        <div class="lines-head">
+          <p class="kicker kicker-rose"><span>02 /</span> <span data-i18n="eb.services">Qué hacemos</span></p>
+          <h2 id="lines-title" class="h2"><span data-i18n="ln.h1">Tres líneas,</span><br><span data-i18n="ln.h2">un mismo ecosistema.</span></h2>
+        </div>
+        <div class="track" data-track>
+          <article class="panel" id="svc-strategy">
+            <figure class="panel-media"><img src="/assets/img/hero-cdmx-day-1200.jpg" alt="" loading="lazy" width="1200" height="675"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-forest">Strategy</p>
+              <h3 class="panel-title" data-i18n="svc.s1.kind">Consultoría estratégica y management</h3>
+              <p data-i18n="ln.s1">Un socio senior al frente, no un equipo junior aprendiendo con tu presupuesto. Diagnóstico, modelos financieros, project finance y PMO.</p>
+            </div>
+          </article>
+          <article class="panel" id="svc-capital">
+            <figure class="panel-media"><img src="/assets/img/reforma-golden-800.jpg" alt="" loading="lazy" width="800" height="1203"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-rose">Capital</p>
+              <h3 class="panel-title" data-i18n="ln.s2h">Venture capital con acompañamiento activo</h3>
+              <p data-i18n="ln.s2">Capital y estructura de fundraising para proyectos que ya validaron algo real. No solo un cheque.</p>
+            </div>
+          </article>
+          <article class="panel" id="svc-studio">
+            <figure class="panel-media"><img src="/assets/img/projects/tropical-trash-community.jpg" alt="" loading="lazy" width="760" height="760"></figure>
+            <div class="panel-body">
+              <p class="panel-tag tag-forest">Studio</p>
+              <h3 class="panel-title" data-i18n="ln.s3h">Incubadora: de la idea a un negocio que se sostiene solo</h3>
+              <p data-i18n="ln.s3">Tú te dedicas a crear; con la red armamos finanzas, marca, operación y todo lo que el negocio necesita.</p>
+            </div>
+          </article>
+          <div class="panel panel-end">
+            <p class="end-line"><span data-i18n="ln.end1">Estrategia, capital e incubación no compiten entre sí:</span> <span class="gold" data-i18n="ln.end2">se retroalimentan.</span></p>
+            <a class="btn btn-lg" href="#contacto" data-i18n="cta.book">Agendar una charla</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 Proyectos ================= -->
+    <section class="sec" id="proyectos" aria-labelledby="proj-title">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="kicker kicker-forest"><span>03 /</span> <span data-i18n="eb.projects">Proyectos</span></p>
+          <h2 id="proj-title" class="h2" data-i18n="proj.title">Proyectos del ecosistema.</h2>
+        </div>
+        <p class="lead" data-i18n="proj.lead">Empresas y proyectos donde Conjunction participa activamente, no solo como asesor: también como socio.</p>
+      </div>
+
+      <article class="feature" aria-labelledby="rocca-title" data-reveal>
+        <figure class="feature-media">
+          <img src="/assets/img/projects/rocca-01.jpg" alt="Render de ROCCA: edificio escalonado con terrazas vegetadas entre la selva" width="480" height="228" loading="lazy">
         </figure>
-
-        <nav class="hero-tabs" aria-label="Líneas de negocio">
-          <a class="hero-tab" href="#svc-strategy">
-            <span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-layers"/></svg></span>
-            <span class="hero-tab-text">
-              <span class="hero-tab-name">Conjunction Strategy</span>
-              <span class="hero-tab-desc" data-i18n="tab.strategy">Diagnóstico, modelos financieros, project finance y PMO.</span>
-            </span>
-            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </a>
-          <a class="hero-tab" href="#svc-capital">
-            <span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-trend"/></svg></span>
-            <span class="hero-tab-text">
-              <span class="hero-tab-name">Conjunction Capital</span>
-              <span class="hero-tab-desc" data-i18n="tab.capital">Capital y estructura de fundraising, con acompañamiento activo.</span>
-            </span>
-            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </a>
-          <a class="hero-tab" href="#svc-studio">
-            <span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-network"/></svg></span>
-            <span class="hero-tab-text">
-              <span class="hero-tab-name">Conjunction Studio</span>
-              <span class="hero-tab-desc" data-i18n="tab.studio">De la idea a un negocio que se sostiene solo.</span>
-            </span>
-            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </a>
-        </nav>
-      </div>
-    </section>
-
-    <!-- ============ Modelo ============ -->
-    <section class="section" id="modelo" aria-labelledby="model-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow eyebrow-forest"><span>01 /</span> <span data-i18n="eb.model">Cómo trabajamos</span></p>
-            <h2 id="model-title" class="h2" data-i18n="model.title">No armamos un equipo de consultoría. Armamos el que tu proyecto necesita.</h2>
-            <span class="rule" aria-hidden="true"></span>
-          </div>
-          <p class="lead" data-i18n="model.lead">La consultoría tradicional escala contratando más gente. Nosotros escalamos con IA y una red de especialistas que entra solo cuando el proyecto lo pide.</p>
-        </div>
-
-        <div class="compare" role="table" aria-label="Consultoría tradicional frente a Conjunction">
-          <div class="compare-row compare-header" role="row">
-            <span role="columnheader" class="visually-hidden" data-i18n="cmp.dim">Aspecto</span>
-            <span role="columnheader" class="compare-trad" data-i18n="cmp.trad">Consultoría tradicional</span>
-            <span role="columnheader" class="compare-cje">Conjunction</span>
-          </div>
-          <div class="compare-row" role="row">
-            <span role="rowheader" data-i18n="cmp.r1">Quién hace el trabajo</span>
-            <span role="cell" class="compare-trad" data-i18n="cmp.r1a">Socio, manager, consultor senior y 3–4 analistas</span>
-            <span role="cell" class="compare-cje"><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span data-i18n="cmp.r1b">Un socio senior al frente, potenciado por IA</span></span>
-          </div>
-          <div class="compare-row" role="row">
-            <span role="rowheader" data-i18n="cmp.r2">Research y modelos</span>
-            <span role="cell" class="compare-trad" data-i18n="cmp.r2a">Los arma el equipo de analistas</span>
-            <span role="cell" class="compare-cje"><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span data-i18n="cmp.r2b">Research, modelos y primeros entregables en días</span></span>
-          </div>
-          <div class="compare-row" role="row">
-            <span role="rowheader" data-i18n="cmp.r3">Especialistas</span>
-            <span role="cell" class="compare-trad" data-i18n="cmp.r3a">Los que la firma tenga en planta</span>
-            <span role="cell" class="compare-cje"><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span data-i18n="cmp.r3b">Una red que se suma solo si el proyecto lo requiere</span></span>
-          </div>
-          <div class="compare-row" role="row">
-            <span role="rowheader" data-i18n="cmp.r4">Plazos</span>
-            <span role="cell" class="compare-trad" data-i18n="cmp.r4a">Meses</span>
-            <span role="cell" class="compare-cje"><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span data-i18n="cmp.r4b">Semanas</span></span>
-          </div>
-          <div class="compare-row" role="row">
-            <span role="rowheader" data-i18n="cmp.r5">Cómo se cobra</span>
-            <span role="cell" class="compare-trad" data-i18n="cmp.r5a">Honorarios fijos</span>
-            <span role="cell" class="compare-cje"><span class="tick" aria-hidden="true"><svg><use href="#i-check"/></svg></span><span data-i18n="cmp.r5b">Fee de mantenimiento + equity compartido</span></span>
+        <div class="feature-body">
+          <p class="feature-name">ROCCA</p>
+          <h3 id="rocca-title" class="feature-tag" data-i18n="proj.rocca.tag">Entre selva y cielo</h3>
+          <p class="meta">Estudio Carroll · Puerto Escondido, Oaxaca <span class="pill pill-forest" data-i18n="proj.rocca.status">En desarrollo</span></p>
+          <p class="feature-desc" data-i18n="proj.rocca.desc">Desarrollo residencial en La Punta, Puerto Escondido, a 600 m de la playa. Es el proyecto ancla de Estudio Carroll, estudio de arquitectura publicado en ArchDaily, Architectural Record, Designboom y Arquine, y el primer caso de validación del modelo Conjunction.</p>
+          <dl class="specs">
+            <div><dt data-i18n="proj.rocca.k1">Departamentos</dt><dd>14</dd></div>
+            <div><dt data-i18n="proj.rocca.k2">Disponibles</dt><dd>11</dd></div>
+            <div><dt data-i18n="proj.rocca.k3">Superficie</dt><dd>65–192 m²</dd></div>
+            <div><dt data-i18n="proj.rocca.k4">Entrega</dt><dd data-i18n="proj.rocca.v4">Jun 2028</dd></div>
+          </dl>
+          <div class="link-row">
+            <a class="link" href="https://www.estudiocarroll.com" target="_blank" rel="noopener"><span>Estudio Carroll</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+            <a class="link" href="https://www.instagram.com/rocca.pxm/" target="_blank" rel="noopener"><span>Instagram ROCCA</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
           </div>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- ============ Servicios ============ -->
-    <section class="section section-rule" id="servicios" aria-labelledby="svc-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow eyebrow-rose"><span>02 /</span> <span data-i18n="eb.services">Qué hacemos</span></p>
-            <h2 id="svc-title" class="h2" data-i18n="svc.title">Tres líneas, un mismo ecosistema.</h2>
-            <span class="rule" aria-hidden="true"></span>
-          </div>
-          <p class="lead" data-i18n="svc.lead">Estrategia, capital e incubación no compiten entre sí: se retroalimentan dentro de la misma red de clientes y proyectos.</p>
-        </div>
+      <ul class="projects">
+        <li class="card project" data-reveal>
+          <div class="project-logo"><img src="/assets/img/projects/bamboo-global-logo.png" alt="Bamboo Global" width="260" height="260" loading="lazy"></div>
+          <h3 class="h4">Bamboo Global</h3>
+          <p class="meta"><span data-i18n="proj.bamboo.loc">Tulum → Ciudad de México</span> <span class="pill pill-rose" data-i18n="proj.bamboo.status">Expansión en curso</span></p>
+          <p data-i18n="proj.bamboo.desc">Chef privado a domicilio para rentas vacacionales y villas de lujo, validado en Tulum. La expansión a CDMX apunta a Roma, Condesa, Polanco y Santa Fe.</p>
+        </li>
+        <li class="card project" data-reveal>
+          <div class="project-logo"><img class="logo-art" src="/assets/img/projects/tropical-trash-logo.png" alt="Tropical Trash" width="320" height="199" loading="lazy"></div>
+          <h3 class="h4">Tropical Trash</h3>
+          <p class="meta"><span>Puerto Escondido · Venice Beach, CA</span> <span class="pill pill-forest" data-i18n="proj.tt.status">Activo</span></p>
+          <p data-i18n="proj.tt.desc">Un proyecto de reciclaje disfrazado de marca de surf: el 10% de cada venta financia contenedores, recolección y clasificación, en alianza con Comunidad NIT.</p>
+          <a class="link" href="https://tropicaltrash.co/" target="_blank" rel="noopener"><span>tropicaltrash.co</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </li>
+        <li class="card project" data-reveal>
+          <div class="project-logo"><img src="/assets/img/projects/live-act-logo.png" alt="Live-Act" width="160" height="143" loading="lazy"></div>
+          <h3 class="h4">Live-Act</h3>
+          <p class="meta"><span data-i18n="proj.la.loc">Ciudad de México</span> <span class="pill pill-rose" data-i18n="proj.la.status">Rediseño en curso</span></p>
+          <p data-i18n="proj.la.desc">Rediseño de una app de pagos cashless para eventos en vivo: wallet, recarga por CLABE y pago con NFC o QR, sin pulseras ni hardware especial.</p>
+          <a class="link" href="https://www.live-act.com/" target="_blank" rel="noopener"><span>live-act.com</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </li>
+      </ul>
 
-        <ol class="services">
-          <li class="service" id="svc-strategy">
-            <div class="service-name">
-              <svg class="line-icon line-forest" aria-hidden="true"><use href="#i-layers"/></svg>
-              <h3 class="h3">Conjunction Strategy</h3>
-              <p class="service-kind" data-i18n="svc.s1.kind">Consultoría estratégica y management</p>
-            </div>
-            <p class="service-desc" data-i18n="svc.s1.desc">Un socio senior al frente, no un equipo junior aprendiendo con tu presupuesto. Te ayudamos a decidir qué hacer y a sostenerlo con números.</p>
-            <ul class="pills pills-forest">
-              <li data-i18n="svc.s1.i1">Diagnóstico estratégico</li>
-              <li data-i18n="svc.s1.i2">Modelos financieros</li>
-              <li data-i18n="svc.s1.i3">Project finance</li>
-              <li data-i18n="svc.s1.i4">PMO y gestión de proyectos</li>
-            </ul>
-          </li>
-          <li class="service" id="svc-capital">
-            <div class="service-name">
-              <svg class="line-icon line-rose" aria-hidden="true"><use href="#i-trend"/></svg>
-              <h3 class="h3">Conjunction Capital</h3>
-              <p class="service-kind" data-i18n="svc.s2.kind">Venture capital</p>
-            </div>
-            <p class="service-desc" data-i18n="svc.s2.desc">Capital y estructura de fundraising para proyectos que ya validaron algo real, con acompañamiento activo y no solo un cheque.</p>
-            <ul class="pills pills-rose">
-              <li data-i18n="svc.s2.i1">Estructura de fundraising</li>
-              <li data-i18n="svc.s2.i2">Inversión en proyectos validados</li>
-              <li data-i18n="svc.s2.i3">Estructuración legal y societaria</li>
-              <li data-i18n="svc.s2.i4">Acompañamiento post-inversión</li>
-            </ul>
-          </li>
-          <li class="service" id="svc-studio">
-            <div class="service-name">
-              <svg class="line-icon line-forest" aria-hidden="true"><use href="#i-network"/></svg>
-              <h3 class="h3">Conjunction Studio</h3>
-              <p class="service-kind" data-i18n="svc.s3.kind">Incubadora</p>
-            </div>
-            <p class="service-desc" data-i18n="svc.s3.desc">De la idea a la ejecución. Tú te dedicas a crear; nosotros armamos, con la red, todo lo que el negocio necesita para sostenerse solo.</p>
-            <ul class="pills pills-forest">
-              <li data-i18n="svc.s3.i1">Especialistas on-demand</li>
-              <li data-i18n="svc.s3.i2">Finanzas y project finance</li>
-              <li data-i18n="svc.s3.i3">Marca y marketing</li>
-              <li data-i18n="svc.s3.i4">Operación y RRHH</li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ Fee + equity ============ -->
-    <section class="section section-rule" aria-labelledby="fee-title">
-      <div class="container fee">
+      <aside class="callout" aria-labelledby="inv-title" data-reveal>
         <div>
-          <p class="eyebrow eyebrow-forest"><span>03 /</span> <span data-i18n="eb.fee">Modelo de negocio</span></p>
-          <h2 id="fee-title" class="h2" data-i18n="fee.title">No cobramos por horas. Ganamos cuando tú ganas.</h2>
-          <span class="rule" aria-hidden="true"></span>
+          <h3 id="inv-title" class="callout-title" data-i18n="inv.title">¿Te interesa participar en estos proyectos?</h3>
+          <p data-i18n="inv.p">La inversión directa en el equity de los proyectos del ecosistema se abrirá en una próxima etapa. Mientras tanto, escríbenos y te contamos cómo participar.</p>
         </div>
-        <div class="fee-cards">
-          <div class="card">
-            <h3 class="card-label" data-i18n="fee.c1.h">Fee de mantenimiento</h3>
-            <p data-i18n="fee.c1.p">Un honorario que cubre lo que cuesta operar. No es el negocio: es el mínimo para poder trabajar contigo.</p>
-          </div>
-          <div class="card card-active">
-            <h3 class="card-label" data-i18n="fee.c2.h">Equity compartido</h3>
-            <p data-i18n="fee.c2.p">Lo que de verdad nos interesa es ser parte del proyecto: equity o upside en las empresas donde nos involucramos. Si el cliente gana, todos ganamos.</p>
-          </div>
-        </div>
-      </div>
+        <a class="btn btn-outline" href="#contacto" data-interest="invest" data-i18n="inv.cta">Hablar sobre inversión</a>
+      </aside>
     </section>
 
-    <!-- ============ Proyectos ============ -->
-    <section class="section section-rule" id="proyectos" aria-labelledby="proj-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow eyebrow-rose"><span>04 /</span> <span data-i18n="eb.projects">Proyectos</span></p>
-            <h2 id="proj-title" class="h2" data-i18n="proj.title">Proyectos del ecosistema.</h2>
-            <span class="rule" aria-hidden="true"></span>
-          </div>
-          <p class="lead" data-i18n="proj.lead">Empresas y proyectos donde Conjunction participa activamente, no solo como asesor: también como socio.</p>
+    <!-- ================= 04 Equipo ================= -->
+    <section class="sec" id="equipo" aria-labelledby="team-title">
+      <div class="sec-head" data-reveal>
+        <div>
+          <p class="kicker kicker-rose"><span>04 /</span> <span data-i18n="eb.team">Equipo</span></p>
+          <h2 id="team-title" class="h2" data-i18n="team.title">Socios que dirigen. Especialistas que ejecutan.</h2>
         </div>
-
-        <article class="feature" aria-labelledby="rocca-title">
-          <figure class="feature-media">
-            <img src="/assets/img/projects/rocca-01.jpg" alt="Render de ROCCA: edificio escalonado con terrazas vegetadas entre la selva" width="480" height="228" loading="lazy">
-          </figure>
-          <div class="feature-body">
-            <h3 id="rocca-title" class="h3 feature-title">ROCCA <span class="feature-tagline" data-i18n="proj.rocca.tag">Entre selva y cielo</span></h3>
-            <p class="project-loc">Estudio Carroll · Puerto Escondido, Oaxaca <span class="pill pill-forest" data-i18n="proj.rocca.status">En desarrollo</span></p>
-            <p data-i18n="proj.rocca.desc">Desarrollo residencial en La Punta, Puerto Escondido, a 600 m de la playa. Es el proyecto ancla de Estudio Carroll, estudio de arquitectura publicado en ArchDaily, Architectural Record, Designboom y Arquine, y el primer caso de validación del modelo Conjunction.</p>
-            <dl class="specs">
-              <div><dt data-i18n="proj.rocca.k1">Departamentos</dt><dd>14</dd></div>
-              <div><dt data-i18n="proj.rocca.k2">Disponibles</dt><dd>11</dd></div>
-              <div><dt data-i18n="proj.rocca.k3">Superficie</dt><dd>65–192 m²</dd></div>
-              <div><dt data-i18n="proj.rocca.k4">Entrega</dt><dd data-i18n="proj.rocca.v4">Jun 2028</dd></div>
-            </dl>
-            <div class="link-row">
-              <a class="link-arrow" href="https://www.estudiocarroll.com" target="_blank" rel="noopener"><span>Estudio Carroll</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-              <a class="link-arrow" href="https://www.instagram.com/rocca.pxm/" target="_blank" rel="noopener"><span>Instagram ROCCA</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-            </div>
-          </div>
-        </article>
-
-        <ul class="projects">
-          <li class="card project">
-            <div class="project-logo"><img src="/assets/img/projects/bamboo-global-logo.png" alt="Bamboo Global" width="260" height="260" loading="lazy"></div>
-            <h3 class="h4">Bamboo Global</h3>
-            <p class="project-loc"><span data-i18n="proj.bamboo.loc">Tulum → Ciudad de México</span> <span class="pill pill-rose" data-i18n="proj.bamboo.status">Expansión en curso</span></p>
-            <p data-i18n="proj.bamboo.desc">Chef privado a domicilio para rentas vacacionales y villas de lujo, validado en Tulum. La expansión a CDMX apunta a Roma, Condesa, Polanco y Santa Fe.</p>
-          </li>
-          <li class="card project">
-            <div class="project-logo"><img class="logo-art" src="/assets/img/projects/tropical-trash-logo.png" alt="Tropical Trash" width="320" height="199" loading="lazy"></div>
-            <h3 class="h4">Tropical Trash</h3>
-            <p class="project-loc"><span>Puerto Escondido · Venice Beach, CA</span> <span class="pill pill-forest" data-i18n="proj.tt.status">Activo</span></p>
-            <p data-i18n="proj.tt.desc">Un proyecto de reciclaje disfrazado de marca de surf: el 10% de cada venta financia contenedores, recolección y clasificación, en alianza con Comunidad NIT.</p>
-            <a class="link-arrow" href="https://tropicaltrash.co/" target="_blank" rel="noopener"><span>tropicaltrash.co</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-          </li>
-          <li class="card project">
-            <div class="project-logo"><img src="/assets/img/projects/live-act-logo.png" alt="Live-Act" width="160" height="143" loading="lazy"></div>
-            <h3 class="h4">Live-Act</h3>
-            <p class="project-loc"><span data-i18n="proj.la.loc">Ciudad de México</span> <span class="pill pill-rose" data-i18n="proj.la.status">Rediseño en curso</span></p>
-            <p data-i18n="proj.la.desc">Rediseño de una app de pagos cashless para eventos en vivo: wallet, recarga por CLABE y pago con NFC o QR, sin pulseras ni hardware especial.</p>
-            <a class="link-arrow" href="https://www.live-act.com/" target="_blank" rel="noopener"><span>live-act.com</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-          </li>
-        </ul>
-
-        <aside class="callout" aria-labelledby="inv-title">
-          <div>
-            <h3 id="inv-title" class="callout-label" data-i18n="inv.title">¿Te interesa participar en estos proyectos?</h3>
-            <p data-i18n="inv.p">La inversión directa en el equity de los proyectos del ecosistema se abrirá en una próxima etapa. Mientras tanto, escríbenos y te contamos cómo participar.</p>
-          </div>
-          <a class="btn btn-outline" href="#contacto" data-interest="invest" data-i18n="inv.cta">Hablar sobre inversión</a>
-        </aside>
+        <p class="lead" data-i18n="team.lead">Cada socio es experto y director de proyecto a la vez. Tu interlocutor es siempre alguien con experiencia, nunca un intermediario.</p>
       </div>
-    </section>
 
-    <!-- ============ Equipo ============ -->
-    <section class="section section-rule" id="equipo" aria-labelledby="team-title">
-      <div class="container">
-        <div class="section-head split">
-          <div>
-            <p class="eyebrow eyebrow-forest"><span>05 /</span> <span data-i18n="eb.team">Equipo</span></p>
-            <h2 id="team-title" class="h2" data-i18n="team.title">Socios que dirigen. Especialistas que ejecutan.</h2>
-            <span class="rule" aria-hidden="true"></span>
-          </div>
-          <p class="lead" data-i18n="team.lead">Cada socio es experto y director de proyecto a la vez. Tu interlocutor es siempre alguien con experiencia, nunca un intermediario.</p>
+      <ul class="partners">
+        <li class="partner" data-reveal>
+          <span class="portrait"><img src="/assets/img/team/gustavo-reboredo.jpg" alt="" width="320" height="320" loading="lazy"></span>
+          <h3 class="partner-name">Gustavo Reboredo</h3>
+          <p class="partner-role" data-i18n="team.role">Socio</p>
+          <p class="partner-bio" data-i18n="team.gr.bio">MSc en Gestión de Proyectos Digitales y Consultoría por ESCP Business School. Ex consultor en IDOM, con experiencia en estrategia de negocio, gestión de clientes y optimización de procesos en proyectos de inversión.</p>
+          <a class="link" href="https://www.linkedin.com/in/gustavo-reboredo/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </li>
+        <li class="partner" data-reveal>
+          <span class="portrait"><img src="/assets/img/team/sebastian-tena.jpg" alt="" width="320" height="320" loading="lazy"></span>
+          <h3 class="partner-name">Sebastián Tena</h3>
+          <p class="partner-role" data-i18n="team.role">Socio</p>
+          <p class="partner-bio" data-i18n="team.st.bio">CEO de ePlata México, al frente de su expansión regional en transferencias de dinero y billeteras digitales multimoneda. Más de una década en servicios financieros y derecho corporativo, con foco en inclusión financiera.</p>
+          <a class="link" href="https://www.linkedin.com/in/sebasti%C3%A1n-tena-9617054a/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </li>
+        <li class="partner" data-reveal>
+          <span class="portrait"><img src="/assets/img/team/michael-greenblatt.jpg" alt="" width="320" height="320" loading="lazy"></span>
+          <h3 class="partner-name">Michael Greenblatt</h3>
+          <p class="partner-role" data-i18n="team.role">Socio</p>
+          <p class="partner-bio" data-i18n="team.mg.bio">Fundador de Kitsune Law, con casi una década en derecho corporativo, venture law y venture capital. Guía a empresas en crecimiento a través de estructuras legales y regulatorias complejas.</p>
+          <a class="link" href="https://www.linkedin.com/in/michael-greenblatt-kitsunelaw/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </li>
+      </ul>
+
+      <div class="network" id="especialistas">
+        <div class="network-head" data-reveal>
+          <h3 class="h3" data-i18n="net.title">Los especialistas</h3>
+          <p data-i18n="net.p1">No mantenemos una estructura fija esperando trabajo. Cada proyecto arma su propio equipo con profesionales que ya resolvieron ese problema antes, y que entran solo durante el tramo en que hacen falta.</p>
+          <p data-i18n="net.p2">Su esquema se define por proyecto y puede incluir equity, igual que el nuestro.</p>
         </div>
 
-        <ul class="partners">
-          <li class="partner">
-            <span class="portrait"><img src="/assets/img/team/gustavo-reboredo.jpg" alt="" width="320" height="320" loading="lazy"></span>
-            <h3 class="h4">Gustavo Reboredo</h3>
-            <p class="partner-role" data-i18n="team.role">Socio</p>
-            <p data-i18n="team.gr.bio">MSc en Gestión de Proyectos Digitales y Consultoría por ESCP Business School. Ex consultor en IDOM, con experiencia en estrategia de negocio, gestión de clientes y optimización de procesos en proyectos de inversión.</p>
-            <a class="link-arrow" href="https://www.linkedin.com/in/gustavo-reboredo/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-          </li>
-          <li class="partner">
-            <span class="portrait"><img src="/assets/img/team/sebastian-tena.jpg" alt="" width="320" height="320" loading="lazy"></span>
-            <h3 class="h4">Sebastián Tena</h3>
-            <p class="partner-role" data-i18n="team.role">Socio</p>
-            <p data-i18n="team.st.bio">CEO de ePlata México, al frente de su expansión regional en transferencias de dinero y billeteras digitales multimoneda. Más de una década en servicios financieros y derecho corporativo, con foco en inclusión financiera.</p>
-            <a class="link-arrow" href="https://www.linkedin.com/in/sebasti%C3%A1n-tena-9617054a/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-          </li>
-          <li class="partner">
-            <span class="portrait"><img src="/assets/img/team/michael-greenblatt.jpg" alt="" width="320" height="320" loading="lazy"></span>
-            <h3 class="h4">Michael Greenblatt</h3>
-            <p class="partner-role" data-i18n="team.role">Socio</p>
-            <p data-i18n="team.mg.bio">Fundador de Kitsune Law, con casi una década en derecho corporativo, venture law y venture capital. Guía a empresas en crecimiento a través de estructuras legales y regulatorias complejas.</p>
-            <a class="link-arrow" href="https://www.linkedin.com/in/michael-greenblatt-kitsunelaw/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-          </li>
-        </ul>
-
-        <div class="network" id="especialistas">
-          <div class="network-head">
-            <h3 class="h3 gold" data-i18n="net.title">Los especialistas</h3>
-            <p data-i18n="net.p1">No mantenemos una estructura fija esperando trabajo. Cada proyecto arma su propio equipo con profesionales que ya resolvieron ese problema antes, y que entran solo durante el tramo en que hacen falta.</p>
-            <p data-i18n="net.p2">Su esquema se define por proyecto y puede incluir equity, igual que el nuestro.</p>
+        <div class="network-lists">
+          <div class="network-group">
+            <h4 class="kicker kicker-forest group-label" data-i18n="net.people">Personas</h4>
+            <details class="acc">
+              <summary>
+                <span class="portrait portrait-sm"><img src="/assets/img/team/aaron-berneking.jpg" alt="" width="320" height="320" loading="lazy"></span>
+                <span class="acc-title"><span class="acc-name">Aaron Berneking</span><span class="acc-meta" data-i18n="net.ab.tag">Estrategia e insights</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body">
+                <p data-i18n="net.ab.p">Estrategia y research en Ipsos Strategy3: market sizing, brand strategy, trends &amp; foresight e IA generativa aplicada a segmentación de audiencias. Lidera equipos en proyectos de estrategia y crecimiento para clientes Fortune 100 en finanzas, tecnología, entretenimiento y energía.</p>
+                <a class="link" href="https://www.linkedin.com/in/aaronberneking/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>
+                <span class="portrait portrait-sm"><img src="/assets/img/team/alex-johnson.jpg" alt="" width="320" height="320" loading="lazy"></span>
+                <span class="acc-title"><span class="acc-name">Alex Johnson</span><span class="acc-meta" data-i18n="net.aj.tag">Arquitectura de redes · Cloud e IA/ML</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body">
+                <ul class="acc-list">
+                  <li data-i18n="net.aj.l1">Cofundador de Turnstyle Solutions, adquirida por Yelp en 2018 por USD 20M.</li>
+                  <li data-i18n="net.aj.l2">Redes inalámbricas en más de 500 ubicaciones (Yum Brands, Subway, Cara Foods, Pernod Ricard).</li>
+                  <li data-i18n="net.aj.l3">Red IoT de más de 400 sensores de riego en más de 50 viñedos de Napa, Sonoma y California.</li>
+                  <li data-i18n="net.aj.l4">WiFi público a escala ciudad en London, Ontario, activo hasta hoy.</li>
+                </ul>
+                <a class="link" href="https://www.linkedin.com/in/aalexjjohnson/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>
+                <span class="portrait portrait-sm"><img src="/assets/img/team/patricia-montes-canul.jpg" alt="" width="320" height="320" loading="lazy"></span>
+                <span class="acc-title"><span class="acc-name">Patricia Montes Canul</span><span class="acc-meta" data-i18n="net.pm.tag">Diseño y estrategia de producto</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body">
+                <p data-i18n="net.pm.p">Product design y estrategia de productos digitales con IA, basados en datos y enfocados en conversión y crecimiento.</p>
+                <div class="link-row">
+                  <a class="link" href="https://patriciacanuldesign.com/about" target="_blank" rel="noopener"><span data-i18n="net.portfolio">Portafolio</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+                  <a class="link" href="https://www.linkedin.com/in/patriciamontescanul/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+                </div>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>
+                <span class="portrait portrait-sm"><img src="/assets/img/team/megha-kraft.jpg" alt="" width="320" height="320" loading="lazy"></span>
+                <span class="acc-title"><span class="acc-name">Megha Kraft</span><span class="acc-meta" data-i18n="net.mk.tag">Dirección creativa y branding</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body">
+                <ul class="acc-list">
+                  <li data-i18n="net.mk.l1">Casi 15 años en dirección creativa y desarrollo de marca: campañas y contenido multiplataforma.</li>
+                  <li data-i18n="net.mk.l2">Directora creativa de Tropical Trash y cofundadora de The Creative Hotline.</li>
+                  <li data-i18n="net.mk.l3">Dirección creativa para Nike, Ulta Beauty, Team USA y la WNBA.</li>
+                </ul>
+                <a class="link" href="https://meghamegha.com/" target="_blank" rel="noopener"><span data-i18n="net.portfolio">Portafolio</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
           </div>
 
           <div class="network-group">
-            <h4 class="eyebrow eyebrow-forest" data-i18n="net.people">Personas</h4>
-            <div class="accordion">
-              <details class="acc">
-                <summary>
-                  <span class="portrait portrait-sm"><img src="/assets/img/team/aaron-berneking.jpg" alt="" width="320" height="320" loading="lazy"></span>
-                  <span class="acc-title"><span class="acc-name">Aaron Berneking</span><span class="acc-meta" data-i18n="net.ab.tag">Estrategia e insights</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body">
-                  <p data-i18n="net.ab.p">Estrategia y research en Ipsos Strategy3: market sizing, brand strategy, trends &amp; foresight e IA generativa aplicada a segmentación de audiencias. Lidera equipos en proyectos de estrategia y crecimiento para clientes Fortune 100 en finanzas, tecnología, entretenimiento y energía.</p>
-                  <a class="link-arrow" href="https://www.linkedin.com/in/aaronberneking/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-              <details class="acc">
-                <summary>
-                  <span class="portrait portrait-sm"><img src="/assets/img/team/alex-johnson.jpg" alt="" width="320" height="320" loading="lazy"></span>
-                  <span class="acc-title"><span class="acc-name">Alex Johnson</span><span class="acc-meta" data-i18n="net.aj.tag">Arquitectura de redes · Cloud e IA/ML</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body">
-                  <ul class="acc-list">
-                    <li data-i18n="net.aj.l1">Cofundador de Turnstyle Solutions, adquirida por Yelp en 2018 por USD 20M.</li>
-                    <li data-i18n="net.aj.l2">Redes inalámbricas en más de 500 ubicaciones (Yum Brands, Subway, Cara Foods, Pernod Ricard).</li>
-                    <li data-i18n="net.aj.l3">Red IoT de más de 400 sensores de riego en más de 50 viñedos de Napa, Sonoma y California.</li>
-                    <li data-i18n="net.aj.l4">WiFi público a escala ciudad en London, Ontario, activo hasta hoy.</li>
-                  </ul>
-                  <a class="link-arrow" href="https://www.linkedin.com/in/aalexjjohnson/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-              <details class="acc">
-                <summary>
-                  <span class="portrait portrait-sm"><img src="/assets/img/team/patricia-montes-canul.jpg" alt="" width="320" height="320" loading="lazy"></span>
-                  <span class="acc-title"><span class="acc-name">Patricia Montes Canul</span><span class="acc-meta" data-i18n="net.pm.tag">Diseño y estrategia de producto</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body">
-                  <p data-i18n="net.pm.p">Product design y estrategia de productos digitales con IA, basados en datos y enfocados en conversión y crecimiento.</p>
-                  <div class="link-row">
-                    <a class="link-arrow" href="https://patriciacanuldesign.com/about" target="_blank" rel="noopener"><span data-i18n="net.portfolio">Portafolio</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                    <a class="link-arrow" href="https://www.linkedin.com/in/patriciamontescanul/" target="_blank" rel="noopener"><span>LinkedIn</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                  </div>
-                </div>
-              </details>
-              <details class="acc">
-                <summary>
-                  <span class="portrait portrait-sm"><img src="/assets/img/team/megha-kraft.jpg" alt="" width="320" height="320" loading="lazy"></span>
-                  <span class="acc-title"><span class="acc-name">Megha Kraft</span><span class="acc-meta" data-i18n="net.mk.tag">Dirección creativa y branding</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body">
-                  <ul class="acc-list">
-                    <li data-i18n="net.mk.l1">Casi 15 años en dirección creativa y desarrollo de marca: campañas y contenido multiplataforma.</li>
-                    <li data-i18n="net.mk.l2">Directora creativa de Tropical Trash y cofundadora de The Creative Hotline.</li>
-                    <li data-i18n="net.mk.l3">Dirección creativa para Nike, Ulta Beauty, Team USA y la WNBA.</li>
-                  </ul>
-                  <a class="link-arrow" href="https://meghamegha.com/" target="_blank" rel="noopener"><span data-i18n="net.portfolio">Portafolio</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-            </div>
-          </div>
-
-          <div class="network-group">
-            <h4 class="eyebrow eyebrow-rose" data-i18n="net.companies">Empresas aliadas</h4>
-            <div class="accordion">
-              <details class="acc">
-                <summary>
-                  <span class="acc-title"><span class="acc-name">Concourse</span><span class="acc-meta" data-i18n="net.cc.tag">IA para finanzas corporativas</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body acc-body-flush">
-                  <p data-i18n="net.cc.p">Plataforma de IA para departamentos de finanzas corporativas: automatiza procesos financieros complejos a escala empresarial.</p>
-                  <a class="link-arrow" href="https://www.concourse.ai/" target="_blank" rel="noopener"><span>concourse.ai</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-              <details class="acc">
-                <summary>
-                  <span class="acc-title"><span class="acc-name">zenda.</span><span class="acc-meta" data-i18n="net.zd.tag">Growth, paid media y data &amp; AI</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body acc-body-flush">
-                  <p data-i18n="net.zd.p">Agencia de growth especializada en paid media, martech y data &amp; AI: estrategias de alto impacto sobre canales pagados y el stack de marketing.</p>
-                  <a class="link-arrow" href="https://zenda.com.ar/" target="_blank" rel="noopener"><span>zenda.com.ar</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-              <details class="acc">
-                <summary>
-                  <span class="acc-title"><span class="acc-name">The Creative Hotline</span><span class="acc-meta" data-i18n="net.ch.tag">Dirección creativa on-demand</span></span>
-                  <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
-                </summary>
-                <div class="acc-body acc-body-flush">
-                  <p data-i18n="net.ch.p">Dirección creativa senior on-demand, sin retainers ni compromisos: sesiones de estrategia creativa para founders, marcas y creadores. Con sede en Venice, CA, y clientes en todo el mundo.</p>
-                  <a class="link-arrow" href="https://www.thecreativehotline.com/" target="_blank" rel="noopener"><span>thecreativehotline.com</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
-                </div>
-              </details>
-            </div>
+            <h4 class="kicker kicker-rose group-label" data-i18n="net.companies">Empresas aliadas</h4>
+            <details class="acc">
+              <summary>
+                <span class="acc-title"><span class="acc-name">Concourse</span><span class="acc-meta" data-i18n="net.cc.tag">IA para finanzas corporativas</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body acc-flush">
+                <p data-i18n="net.cc.p">Plataforma de IA para departamentos de finanzas corporativas: automatiza procesos financieros complejos a escala empresarial.</p>
+                <a class="link" href="https://www.concourse.ai/" target="_blank" rel="noopener"><span>concourse.ai</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>
+                <span class="acc-title"><span class="acc-name">zenda.</span><span class="acc-meta" data-i18n="net.zd.tag">Growth, paid media y data &amp; AI</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body acc-flush">
+                <p data-i18n="net.zd.p">Agencia de growth especializada en paid media, martech y data &amp; AI: estrategias de alto impacto sobre canales pagados y el stack de marketing.</p>
+                <a class="link" href="https://zenda.com.ar/" target="_blank" rel="noopener"><span>zenda.com.ar</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>
+                <span class="acc-title"><span class="acc-name">The Creative Hotline</span><span class="acc-meta" data-i18n="net.ch.tag">Dirección creativa on-demand</span></span>
+                <span class="acc-icon" aria-hidden="true"><svg><use href="#i-plus"/></svg></span>
+              </summary>
+              <div class="acc-body acc-flush">
+                <p data-i18n="net.ch.p">Dirección creativa senior on-demand, sin retainers ni compromisos: sesiones de estrategia creativa para founders, marcas y creadores. Con sede en Venice, CA, y clientes en todo el mundo.</p>
+                <a class="link" href="https://www.thecreativehotline.com/" target="_blank" rel="noopener"><span>thecreativehotline.com</span><svg class="icon" aria-hidden="true"><use href="#i-out"/></svg></a>
+              </div>
+            </details>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ Nosotros ============ -->
-    <section class="section section-rule" id="nosotros" aria-labelledby="about-title">
-      <div class="container">
-        <p class="eyebrow eyebrow-rose"><span>06 /</span> <span data-i18n="eb.about">Nosotros</span></p>
+    <!-- ================= 05 Nosotros ================= -->
+    <section class="sec" id="nosotros" aria-labelledby="about-title">
+      <div class="sec-head sec-head-single" data-reveal>
+        <p class="kicker kicker-forest"><span>05 /</span> <span data-i18n="eb.about">Nosotros</span></p>
         <h2 id="about-title" class="visually-hidden" data-i18n="about.title">Misión, visión y valores</h2>
-        <div class="mv">
-          <div class="mv-item">
-            <h3 class="mv-label mv-forest" data-i18n="about.m.h">Misión</h3>
-            <p class="mv-text" data-i18n="about.m.p">Democratizar el acceso a consultoría de nivel corporativo, con el estándar de las grandes firmas a la velocidad y el costo de un founder, para que startups y pequeñas empresas puedan construir en vez de resolver solas lo que no saben hacer.</p>
-          </div>
-          <div class="mv-item">
-            <h3 class="mv-label mv-rose" data-i18n="about.v.h">Visión</h3>
-            <p class="mv-text" data-i18n="about.v.p">Ser la red que conecta talento, capital e inteligencia artificial, para que cualquier creador con un proyecto sólido tenga el mismo soporte estratégico y operativo que hoy solo pueden pagar las grandes corporaciones.</p>
-          </div>
-        </div>
-
-        <h3 class="h3 gold values-title" data-i18n="about.values">Lo que nos guía</h3>
-        <ul class="values">
-          <li class="card value"><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-users"/></svg></span><h4 data-i18n="val.1.h">Democratizar el acceso</h4><p data-i18n="val.1.p">Que construir algo no dependa de poder pagar un equipo de ocho consultores.</p></li>
-          <li class="card value"><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span><h4 data-i18n="val.2.h">Que cada quien haga lo suyo</h4><p data-i18n="val.2.p">Los creadores se dedican a crear. Nosotros nos encargamos del resto, desde project finance hasta marketing y RRHH.</p></li>
-          <li class="card value"><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-layers"/></svg></span><h4 data-i18n="val.3.h">El equipo que hace falta</h4><p data-i18n="val.3.p">Estructuras armadas para cada proyecto, en vez de procesos rígidos heredados de la consultoría tradicional.</p></li>
-          <li class="card value"><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-network"/></svg></span><h4 data-i18n="val.4.h">Red compuesta</h4><p data-i18n="val.4.p">Conectamos a nuestros clientes entre sí cuando tiene sentido. La red vale más con cada proyecto que se suma.</p></li>
-          <li class="card value"><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-trend"/></svg></span><h4 data-i18n="val.5.h">Éxito compartido</h4><p data-i18n="val.5.p">Upside y equity antes que depender solo de honorarios fijos.</p></li>
-          <li class="card value"><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h4 data-i18n="val.6.h">Nueva generación</h4><p data-i18n="val.6.p">Construido para founders millennial y Z, con la IA como motor de todo lo que hacemos y no solo como herramienta.</p></li>
-        </ul>
       </div>
+      <div class="statements">
+        <div class="statement" data-reveal>
+          <h3 class="statement-label label-forest" data-i18n="about.m.h">Misión</h3>
+          <p class="statement-text" data-i18n="about.m.p">Democratizar el acceso a consultoría de nivel corporativo, con el estándar de las grandes firmas a la velocidad y el costo de un founder, para que startups y pequeñas empresas puedan construir en vez de resolver solas lo que no saben hacer.</p>
+        </div>
+        <div class="statement" data-reveal>
+          <h3 class="statement-label label-rose" data-i18n="about.v.h">Visión</h3>
+          <p class="statement-text" data-i18n="about.v.p">Ser la red que conecta talento, capital e inteligencia artificial, para que cualquier creador con un proyecto sólido tenga el mismo soporte estratégico y operativo que hoy solo pueden pagar las grandes corporaciones.</p>
+        </div>
+      </div>
+
+      <h3 class="h3 values-title" data-i18n="about.values" data-reveal>Lo que nos guía</h3>
+      <ul class="values">
+        <li class="card value" data-reveal><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-users"/></svg></span><h4 data-i18n="val.1.h">Democratizar el acceso</h4><p data-i18n="val.1.p">Que construir algo no dependa de poder pagar un equipo de ocho consultores.</p></li>
+        <li class="card value" data-reveal><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-briefcase"/></svg></span><h4 data-i18n="val.2.h">Que cada quien haga lo suyo</h4><p data-i18n="val.2.p">Los creadores se dedican a crear. Nosotros nos encargamos del resto, desde project finance hasta marketing y RRHH.</p></li>
+        <li class="card value" data-reveal><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-layers"/></svg></span><h4 data-i18n="val.3.h">El equipo que hace falta</h4><p data-i18n="val.3.p">Estructuras armadas para cada proyecto, en vez de procesos rígidos heredados de la consultoría tradicional.</p></li>
+        <li class="card value" data-reveal><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-network"/></svg></span><h4 data-i18n="val.4.h">Red compuesta</h4><p data-i18n="val.4.p">Conectamos a nuestros clientes entre sí cuando tiene sentido. La red vale más con cada proyecto que se suma.</p></li>
+        <li class="card value" data-reveal><span class="badge badge-forest"><svg aria-hidden="true"><use href="#i-trend"/></svg></span><h4 data-i18n="val.5.h">Éxito compartido</h4><p data-i18n="val.5.p">Upside y equity antes que depender solo de honorarios fijos.</p></li>
+        <li class="card value" data-reveal><span class="badge badge-rose"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h4 data-i18n="val.6.h">Nueva generación</h4><p data-i18n="val.6.p">Construido para founders millennial y Z, con la IA como motor de todo lo que hacemos y no solo como herramienta.</p></li>
+      </ul>
     </section>
 
-    <!-- ============ Plataforma ============ -->
-    <section class="section section-rule platform" aria-labelledby="plat-title">
-      <div class="container platform-inner">
-        <div>
-          <p class="eyebrow eyebrow-forest"><span>07 /</span> <span data-i18n="eb.platform">Plataforma</span></p>
+    <!-- ================= 06 Plataforma ================= -->
+    <section class="sec platform" aria-labelledby="plat-title">
+      <div class="platform-inner">
+        <div data-reveal>
+          <p class="kicker kicker-rose"><span>06 /</span> <span data-i18n="eb.platform">Plataforma</span></p>
           <h2 id="plat-title" class="h2" data-i18n="plat.title">Próximamente: una plataforma para construir junto a nosotros.</h2>
-          <span class="rule" aria-hidden="true"></span>
           <p class="lead" data-i18n="plat.lead">Cada empresa del ecosistema tendrá su propio espacio para trabajar con el equipo de Conjunction.</p>
         </div>
         <ul class="plat-list">
-          <li><svg class="line-icon line-forest" aria-hidden="true"><use href="#i-users"/></svg><div><h3 class="h5" data-i18n="plat.1.h">Colaboración en vivo</h3><p data-i18n="plat.1.p">El diseño del proyecto se trabaja en un solo lugar, sin ida y vuelta de archivos.</p></div></li>
-          <li><svg class="line-icon line-rose" aria-hidden="true"><use href="#i-target"/></svg><div><h3 class="h5" data-i18n="plat.2.h">Selección de equipo</h3><p data-i18n="plat.2.p">Eliges de la red quién se suma, según la etapa del proyecto.</p></div></li>
-          <li><svg class="line-icon line-forest" aria-hidden="true"><use href="#i-gem"/></svg><div><h3 class="h5" data-i18n="plat.3.h">Herramientas con IA</h3><p data-i18n="plat.3.p">Modelos, research y primeros borradores con el mismo motor que usa nuestro equipo.</p></div></li>
-          <li><svg class="line-icon line-rose" aria-hidden="true"><use href="#i-trend"/></svg><div><h3 class="h5" data-i18n="plat.4.h">Seguimiento</h3><p data-i18n="plat.4.p">El estado del proyecto y la relación de equity, siempre visibles.</p></div></li>
+          <li data-reveal><svg class="line-icon line-forest" aria-hidden="true"><use href="#i-users"/></svg><div><h3 data-i18n="plat.1.h">Colaboración en vivo</h3><p data-i18n="plat.1.p">El diseño del proyecto se trabaja en un solo lugar, sin ida y vuelta de archivos.</p></div></li>
+          <li data-reveal><svg class="line-icon line-rose" aria-hidden="true"><use href="#i-target"/></svg><div><h3 data-i18n="plat.2.h">Selección de equipo</h3><p data-i18n="plat.2.p">Eliges de la red quién se suma, según la etapa del proyecto.</p></div></li>
+          <li data-reveal><svg class="line-icon line-forest" aria-hidden="true"><use href="#i-gem"/></svg><div><h3 data-i18n="plat.3.h">Herramientas con IA</h3><p data-i18n="plat.3.p">Modelos, research y primeros borradores con el mismo motor que usa nuestro equipo.</p></div></li>
+          <li data-reveal><svg class="line-icon line-rose" aria-hidden="true"><use href="#i-trend"/></svg><div><h3 data-i18n="plat.4.h">Seguimiento</h3><p data-i18n="plat.4.p">El estado del proyecto y la relación de equity, siempre visibles.</p></div></li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ Contacto ============ -->
-    <section class="section section-rule contact" id="contacto" aria-labelledby="contact-title">
-      <div class="container contact-inner">
-        <div class="contact-copy">
-          <p class="eyebrow eyebrow-rose"><span>08 /</span> <span data-i18n="eb.contact">Contacto</span></p>
-          <h2 id="contact-title" class="h2" data-i18n="contact.title">Hablemos de tu proyecto.</h2>
-          <span class="rule" aria-hidden="true"></span>
+    <!-- ================= 07 Contacto ================= -->
+    <section class="sec contact" id="contacto" aria-labelledby="contact-title">
+      <p class="kicker kicker-forest" data-reveal><span>07 /</span> <span data-i18n="eb.contact">Contacto</span></p>
+      <h2 id="contact-title" class="mega mega-contact" data-reveal data-i18n="contact.title">Hablemos de tu proyecto.</h2>
+      <div class="contact-grid">
+        <div class="contact-copy" data-reveal>
           <p class="lead" data-i18n="contact.lead">Estrategia, capital o incubación: cuéntanos en qué etapa estás y lo vemos juntos. Respondemos personalmente.</p>
           <a class="contact-email" href="mailto:hi@cjecosystems.com">hi@cjecosystems.com</a>
           <figure class="contact-media">
-            <img src="/assets/img/reforma-golden-1600.jpg" srcset="/assets/img/reforma-golden-800.jpg 800w, /assets/img/reforma-golden-1600.jpg 1600w" sizes="(min-width: 960px) 520px, 100vw" alt="Paseo de la Reforma al atardecer, con el sol entre los edificios" width="1600" height="2407" loading="lazy">
+            <img src="/assets/img/reforma-golden-1600.jpg" srcset="/assets/img/reforma-golden-800.jpg 800w, /assets/img/reforma-golden-1600.jpg 1600w" sizes="(min-width: 960px) 480px, 100vw" alt="Paseo de la Reforma al atardecer" width="1600" height="2407" loading="lazy">
           </figure>
         </div>
 
-        <form class="card form" data-form action="https://formspree.io/f/meaqplno" method="POST" novalidate>
+        <form class="card form" data-form action="https://formspree.io/f/meaqplno" method="POST" novalidate data-reveal>
           <div class="form-banner" role="status" aria-live="polite" data-form-banner hidden></div>
           <div class="field">
             <label for="f-name" data-i18n="form.name">Nombre</label>
@@ -587,46 +516,42 @@
             <span class="field-error" data-error-for="message"></span>
           </div>
           <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button class="btn btn-primary btn-lg btn-block" type="submit" data-submit><span data-i18n="form.submit">Enviar mensaje</span></button>
+          <button class="btn btn-lg btn-block" type="submit" data-submit><span data-i18n="form.submit">Enviar mensaje</span></button>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- ============ Footer ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <a class="brand" href="#top" aria-label="Conjunction Ecosystems">
-          <svg class="brand-mark" aria-hidden="true"><use href="#cje-ring"/></svg>
-          <span class="brand-word">Conjunction<span class="brand-sub">Ecosystems</span></span>
-        </a>
-        <p class="tagline" data-i18n="footer.tag">Redes · Inteligencia · Transformación</p>
+  <!-- ================= Footer ================= -->
+  <footer class="ftr">
+    <div class="ftr-top">
+      <a class="brand" href="#top" aria-label="Conjunction Ecosystems">
+        <svg class="brand-mark" aria-hidden="true"><use href="#cje-ring"/></svg>
+        <span class="brand-word">Conjunction<span>Ecosystems</span></span>
+      </a>
+      <p class="tagline" data-i18n="footer.tag">Redes · Inteligencia · Transformación</p>
+    </div>
+    <div class="ftr-mid">
+      <nav class="ftr-nav" aria-label="Pie de página">
+        <a href="#modelo" data-i18n="nav.model">Cómo trabajamos</a>
+        <a href="#lineas" data-i18n="nav.services">Qué hacemos</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#equipo" data-i18n="nav.team">Equipo</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="ftr-contact">
+        <a href="mailto:hi@cjecosystems.com">hi@cjecosystems.com</a>
+        <p data-i18n="footer.city">México</p>
       </div>
-      <div class="footer-mid">
-        <nav class="footer-nav" aria-label="Pie de página">
-          <ul>
-            <li><a href="#servicios" data-i18n="nav.services">Qué hacemos</a></li>
-            <li><a href="#modelo" data-i18n="nav.model">Cómo trabajamos</a></li>
-            <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
-            <li><a href="#equipo" data-i18n="nav.team">Equipo</a></li>
-            <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
-            <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="footer-contact">
-          <a href="mailto:hi@cjecosystems.com">hi@cjecosystems.com</a>
-          <p data-i18n="footer.city">México</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Conjunction Ecosystems</p>
-        <p data-i18n="footer.photo">Fotografía: Pexels</p>
-      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p>© <span data-year>2026</span> Conjunction Ecosystems</p>
+      <p data-i18n="footer.photo">Fotografía y video: Pexels</p>
     </div>
   </footer>
 
   <script src="/assets/js/i18n.js" defer></script>
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

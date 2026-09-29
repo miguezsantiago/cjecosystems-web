@@ -315,3 +315,16 @@ Bright daytime Mexico City photography in 12px-radius frames on a `line` placeho
 - **Don't** add a second typeface.
 - **Don't** use filled or solid icons outside the circular badges.
 - **Don't** use AI or sci-fi imagery (robots, neural nets, particles, glow).
+
+
+## Display and motion (v3, 2026-09-29)
+
+The shipped home (`site/index.html`, `site/assets/css/site.css`, `site/assets/js/site.js`) extends the system above:
+
+- **Expanded display:** Archivo is loaded with its width axis (`wdth 62..125`). Display type uses `font-stretch` 106–118% at 700: the hero `.mega` at clamp(3.25rem, 8.1vw, 9rem) with -0.045em tracking, the contact `.mega-contact`, the panel tags (Strategy / Capital / Studio) and the project name (ROCCA). H2s sit at 108%. Body text stays at 100%.
+- **Scroll scenes** (desktop above 880px, no reduced motion; otherwise the `.static` layout):
+  1. *Intro:* a pill "window" inside the headline plays the video, and a clip-path grows it to full bleed as you scroll. A graphite gradient under the ivory overlay text is the only darkening in the system, and it counts as an image treatment, not a fill.
+  2. *Mechanism:* a sticky SVG with five states, from the traditional pyramid, to the C ring (senior partner), to the gold AI orbit, to six network nodes (Forest/Rose), to the gold equity ring, synced to steps A–E.
+  3. *Lines:* horizontal panels (image plus body) translated by vertical scroll.
+- **Reveals:** `[data-reveal]` blocks rise 28px and fade in once (0.9s, ease-out), staggered by 80ms in groups of three.
+- **Video:** `assets/video/cdmx-drone-15809011.mp4` (Pexels, 1280×720, 8 MB), muted autoplay loop with a JPG poster.
