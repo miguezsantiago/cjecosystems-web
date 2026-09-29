@@ -36,8 +36,18 @@
       'hero.title1': 'Strategy consulting',
       'hero.title2': 'for the AI era.',
       'hero.sub': 'The rigor of a major firm, at the speed of a founder.',
-      'hero.lede': 'Strategy, capital and incubation for companies in the making. A senior partner powered by AI and a network of specialists activated project by project, who win when you win.',
+      'hero.lede': 'A senior partner powered by AI and a network of specialists activated project by project, who win when you win.',
       'hero.cta2': 'How we work',
+      'hero.eyebrow': 'Consulting · Capital · Incubation',
+      'hero.em': 'We are redesigning the economics of consulting.',
+      'eb.model': 'How we work',
+      'eb.services': 'What we do',
+      'eb.fee': 'Business model',
+      'eb.projects': 'Projects',
+      'eb.team': 'Team',
+      'eb.about': 'About',
+      'eb.platform': 'Platform',
+      'eb.contact': 'Contact',
       'tab.strategy': 'Diagnostics, financial models, project finance and PMO.',
       'tab.capital': 'Capital and fundraising structure, with active involvement.',
       'tab.studio': 'From idea to a business that stands on its own.',
@@ -196,7 +206,7 @@
       'form.err.emailFormat': 'Check the email address: it looks incomplete.',
       'form.err.message': 'Tell us briefly how we can help.',
 
-      'footer.tag': 'Networks. Intelligence. Total transformation.',
+      'footer.tag': 'Networks · Intelligence · Transformation',
       'footer.city': 'Mexico',
       'footer.photo': 'Photography: Pexels'
     }
