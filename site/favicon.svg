@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <circle cx="80" cy="80" r="80" fill="#3F6B52"/>
+  <g transform="translate(80,80) scale(.62)" fill="none" stroke="#F3F0E9" stroke-width="26">
+    <circle r="57" stroke-dasharray="159.17 199" transform="rotate(180)"/>
+    <circle r="57" stroke-dasharray="159.17 199" transform="rotate(20)"/>
+  </g>
+</svg>

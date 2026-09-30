@@ -1,0 +1,223 @@
+{
+  "title": "Elegí el mundo visual de Conjunction",
+  "question": "El sorteo asignó «Juego de planos». Quedátelo, elegí una alternativa o volvé a sortear.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Juego de planos",
+      "kicker": "EL SORTEO",
+      "lineage": "Planos de obra mexicanos: láminas numeradas, cotas, ejes y cuadro de rótulo",
+      "thesis": "Cada proyecto se dibuja antes de construirse: la firma como el juego de planos que lleva una idea a obra.",
+      "palette": [
+        "#F4F5F2",
+        "#1E2A6B",
+        "#D6452B",
+        "#9AA0A8"
+      ],
+      "materials": [
+        "copia heliográfica (diazo)",
+        "tinta de dibujo técnico",
+        "sello de revisión"
+      ],
+      "viewport": "Lámina A-000 (portada): corte arquitectónico a pantalla completa con el equipo como piezas acotadas (socio + IA como cimiento, especialistas que se suman por nivel), titular en el cuadro de rótulo y CTA 'Agendar una charla' como sello rojo.",
+      "risk": "Puede leerse como estudio de arquitectura y no como consultora si el copy no nombra estrategia, capital e incubación desde el primer pantallazo.",
+      "raised": [
+        {
+          "from": "challenger-teletext",
+          "raise": "Cada página tiene dirección propia (A-100 Estrategia, A-200 Capital, P-101 ROCCA): el índice de láminas es la navegación, no un menú decorativo."
+        },
+        {
+          "from": "challenger-riso",
+          "raise": "Solo dos tintas, índigo y bermellón, que se sobreimprimen donde se cruzan: ningún color entra sin ser una de esas dos."
+        },
+        {
+          "from": "challenger-polish",
+          "raise": "El corte del hero ocupa toda la lámina: una sola imagen dominante, nunca una ilustración al costado del texto."
+        },
+        {
+          "from": "challenger-kaiju",
+          "raise": "Los estados escalan con calma burocrática: 'Aprobado', 'En revisión', 'Próximamente' son sellos con su propio peso, no badges."
+        }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Muros de color",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Arquitectura moderna mexicana: planos de color saturado, luz rasante y sombra",
+      "thesis": "La firma como una casa de muros de color: cada línea de negocio es un plano de color que recibe la luz.",
+      "palette": [
+        "#C8325B",
+        "#E39B2D",
+        "#2F4B8C",
+        "#EDE6DA",
+        "#1B1512"
+      ],
+      "materials": [
+        "muro aplanado pintado",
+        "luz rasante",
+        "sombra dura"
+      ],
+      "viewport": "Un muro rosa mexicano a pantalla completa cortado por la sombra de una celosía; el titular apoyado en el plano de luz y la CTA en un muro ocre.",
+      "risk": "Es la jugada más obvia para 'firma mexicana': Barragán es a donde llega casi todo el mundo, y puede confundirse con un hotel boutique."
+    },
+    {
+      "id": "challenger-glazier",
+      "label": "Mampara de vidrio",
+      "verdict": "competitive",
+      "lineage": "Mampara de herrería con vidrios de color, taller de vidriero",
+      "thesis": "La red de especialistas como una mampara: cada vidrio es un especialista y se enciende cuando el proyecto lo activa.",
+      "palette": [
+        "#111111",
+        "#E9ECEA",
+        "#1F4FB5",
+        "#D98A1E",
+        "#7A1F2B"
+      ],
+      "materials": [
+        "herrería negra",
+        "vidrio estirado",
+        "vidrio de color retroiluminado"
+      ],
+      "viewport": "Una mampara a pantalla completa, casi transparente; el titular en el vidrio central y tres vidrios de color (Strategy, Capital, Studio) que se encienden en secuencia.",
+      "case": "Gana en claridad, porque la activación por proyecto se ve literalmente, pero pierde en identificación: nadie en el público vive entre mamparas.",
+      "risk": "Si la herrería es tímida queda como un grid de tarjetas con bordes negros.",
+      "hero": "https://impeccable.style/worlds/cards/craft-making-glazier-colorfield-partition-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/craft-making-glazier-colorfield-partition.webp"
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "Teletexto",
+      "verdict": "declined",
+      "lineage": "Revistas de teletexto de TV",
+      "thesis": "La firma como servicio de páginas numeradas sobre negro.",
+      "palette": [
+        "#000000",
+        "#FFFF00",
+        "#00FFFF",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "mosaico de bloques",
+        "grilla de 40 columnas"
+      ],
+      "viewport": "Página 100 con el índice de servicios.",
+      "case": "Pierde en los dos ejes: resulta nostálgico y lúdico justo donde se necesita confianza institucional.",
+      "kept": "Cada página tiene una dirección propia.",
+      "risk": "Parece una novedad retro.",
+      "hero": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service-hero.webp"
+    },
+    {
+      "id": "challenger-riso",
+      "label": "Risografía",
+      "verdict": "declined",
+      "lineage": "Impresión riso de dos tintas",
+      "thesis": "Tintas fluorescentes desfasadas sobre papel.",
+      "palette": [
+        "#FF48B0",
+        "#0078BF",
+        "#FFE800",
+        "#F2EFE8"
+      ],
+      "materials": [
+        "grano riso",
+        "desregistro"
+      ],
+      "viewport": "Formas de papel recortado en rosa y azul.",
+      "case": "Pierde en los dos ejes: se lee como fanzine o estudio creativo, no como consultora.",
+      "kept": "Compromiso total con dos tintas.",
+      "risk": "Poco serio para inversores.",
+      "hero": "https://impeccable.style/worlds/cards/risograph-web-system-hero.webp"
+    },
+    {
+      "id": "challenger-polish",
+      "label": "Cartel polaco",
+      "verdict": "declined",
+      "lineage": "Carteles de cine polacos",
+      "thesis": "Una metáfora pintada que se traga la hoja.",
+      "palette": [
+        "#5B2A6E",
+        "#B3122E",
+        "#9C7A2E"
+      ],
+      "materials": [
+        "gouache",
+        "rotulado a mano"
+      ],
+      "viewport": "Una sola imagen surrealista con el nombre rotulado.",
+      "case": "Pierde en los dos ejes: es demasiado autoral y oscuro para explicar un modelo de negocio.",
+      "kept": "Una sola imagen dominante.",
+      "risk": "Opaca la oferta.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-polish-film-poster-hero.webp"
+    },
+    {
+      "id": "challenger-kaiju",
+      "label": "Alerta de emergencia",
+      "verdict": "declined",
+      "lineage": "Cortinas de alerta de TV japonesa",
+      "thesis": "Una escalada de alertas en franjas rojas y blancas.",
+      "palette": [
+        "#8A8A8A",
+        "#D7261E",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "noticiero monocromo",
+        "franjas de defensa civil"
+      ],
+      "viewport": "Una placa con franjas y una flecha.",
+      "case": "Pierde en los dos ejes: el tono alarmista contradice la confianza.",
+      "kept": "Estados que escalan con calma.",
+      "risk": "Alarmista.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-kaiju-broadcast-alert-hero.webp"
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Nube iridiscente",
+      "verdict": "declined",
+      "lineage": "Borde de nube iridiscente",
+      "thesis": "Blanco de nube con un filo espectral.",
+      "palette": [
+        "#FFFFFF",
+        "#56606B",
+        "#9FE3C9",
+        "#E7A1C4",
+        "#9B86D9"
+      ],
+      "materials": [
+        "difracción",
+        "márgenes blancos"
+      ],
+      "viewport": "Una nube con un borde de color.",
+      "case": "Pierde en los dos ejes: es etéreo, se acerca al cliché de la IA y no dice nada de la firma.",
+      "kept": "Color reservado para bordes finos.",
+      "risk": "Cae en el cliché de la IA.",
+      "hero": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "El estándar de la categoría",
+    "thesis": "Lo que hacen las grandes consultoras, ejecutado con excelencia.",
+    "palette": [
+      "#FFFFFF",
+      "#0B1B33",
+      "#FFE600",
+      "#5B6675"
+    ],
+    "materials": [
+      "foto a sangre",
+      "grilla limpia",
+      "sans corporativa"
+    ],
+    "viewport": "Foto editorial a pantalla completa, titular grande en blanco, 'Hablemos' como botón amarillo y tres tarjetas de servicios debajo.",
+    "risk": "Por diseño, no se distingue de la competencia."
+  },
+  "steer": true
+}

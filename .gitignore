@@ -14,3 +14,9 @@ desktop.ini
 # Editor
 .vscode/
 node_modules/
+
+# Impeccable: capturas y artefactos de trabajo
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/build/

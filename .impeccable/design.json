@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-29T00:00:00Z",
+  "title": "Design System: Conjunction Ecosystems",
+  "extensions": {
+    "colorMeta": {
+      "ivory": { "role": "neutral", "displayName": "Ivory Linen", "canonical": "#F3F0E9", "tonalRamp": ["oklch(15% 0.009 85)", "oklch(27% 0.009 85)", "oklch(40% 0.01 85)", "oklch(53% 0.01 85)", "oklch(66% 0.01 85)", "oklch(79% 0.01 85)", "oklch(89% 0.01 85)", "oklch(95.4% 0.009 85)"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite", "canonical": "#2B2B2E", "tonalRamp": ["oklch(15% 0.005 285)", "oklch(29% 0.005 285)", "oklch(40% 0.005 285)", "oklch(52% 0.006 285)", "oklch(64% 0.006 285)", "oklch(76% 0.005 285)", "oklch(87% 0.004 285)", "oklch(95% 0.002 285)"] },
+      "graphite-soft": { "role": "neutral", "displayName": "Graphite Soft", "canonical": "#6B6B70" },
+      "forest": { "role": "primary", "displayName": "Forest Green", "canonical": "#3F6B52", "tonalRamp": ["oklch(18% 0.04 155)", "oklch(28% 0.05 155)", "oklch(38% 0.055 155)", "oklch(48% 0.06 155)", "oklch(60% 0.06 155)", "oklch(72% 0.05 155)", "oklch(85% 0.03 155)", "oklch(95% 0.012 155)"] },
+      "forest-deep": { "role": "primary", "displayName": "Forest Deep (hover)", "canonical": "#345A45" },
+      "rose": { "role": "secondary", "displayName": "Old Rose", "canonical": "#B5566F", "tonalRamp": ["oklch(18% 0.06 5)", "oklch(28% 0.08 5)", "oklch(38% 0.1 5)", "oklch(48% 0.115 5)", "oklch(56% 0.12 5)", "oklch(70% 0.09 5)", "oklch(84% 0.05 5)", "oklch(95% 0.015 5)"] },
+      "rose-ink": { "role": "secondary", "displayName": "Rose Ink (small text, AA)", "canonical": "#A34A62" },
+      "gold": { "role": "tertiary", "displayName": "Antique Gold", "canonical": "#A87C3F", "tonalRamp": ["oklch(20% 0.04 70)", "oklch(30% 0.06 70)", "oklch(41% 0.075 70)", "oklch(52% 0.085 70)", "oklch(62% 0.09 70)", "oklch(74% 0.07 75)", "oklch(86% 0.04 80)", "oklch(95% 0.015 80)"] },
+      "line": { "role": "neutral", "displayName": "Line (hairline tint)", "canonical": "#DCD5C6" },
+      "field-stroke": { "role": "neutral", "displayName": "Field Stroke", "canonical": "#8C8474" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only, gold, stacked lines, max 14ch." },
+      "headline": { "displayName": "Headline", "purpose": "Section H2s in gold, followed by the 40x3 graphite rule." },
+      "title": { "displayName": "Title", "purpose": "Service names and feature project title in graphite; sub-section titles in gold." },
+      "title-sm": { "displayName": "Title Small", "purpose": "Project and partner names; card and callout labels in gold (20px bold qualifies as large text)." },
+      "statement": { "displayName": "Statement", "purpose": "Hero lede fixed at 24px so its gold phrase is large text; mission and vision at clamp(1.25rem, 1.8vw, 1.5rem)." },
+      "lead": { "displayName": "Lead", "purpose": "Graphite-soft paragraph beside a section headline, max 56ch." },
+      "body": { "displayName": "Body", "purpose": "Running text in graphite." },
+      "body-sm": { "displayName": "Body Small", "purpose": "Nav, arrow links, tab and accordion meta, location lines." },
+      "label": { "displayName": "Label", "purpose": "Tracked caps: 0N / SECTION eyebrows (Forest or Rose Ink), column heads, Mission/Vision, footer tagline." },
+      "figure": { "displayName": "Figure", "purpose": "Spec values in tabular numerals." }
+    },
+    "shadows": [
+      { "name": "field-focus", "value": "0 0 0 3px rgba(63, 107, 82, .22)", "purpose": "Focused input, with a Forest border. The only shadow in the system." }
+    ],
+    "filters": [
+      { "name": "hero-warm", "value": "sepia(.14) saturate(.92) brightness(1.03)", "purpose": "Warms the hero photo's blue sky toward the ivory ground." },
+      { "name": "portrait-rest", "value": "grayscale(1) sepia(.12) contrast(1.02)", "purpose": "Portraits at rest; hover returns to full color over 500ms." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single easing curve for every transition and entrance." },
+      { "name": "state-fast", "value": "200ms", "purpose": "Button fills, field borders." },
+      { "name": "state-rule", "value": "250-350ms", "purpose": "Nav underline scale-in, arrow nudge, header hairline, accordion rotate." },
+      { "name": "portrait-color", "value": "500ms", "purpose": "Portrait grayscale to color on hover." },
+      { "name": "hero-rise", "value": "1s, staggered .08s to .6s", "purpose": "Hero headline lines, copy and tabs rise 18px." },
+      { "name": "hero-reveal", "value": "1.4s, delay .2s", "purpose": "Hero photo clip-path reveal top to bottom. Reduced motion: static." }
+    ],
+    "breakpoints": [
+      { "name": "header-compact", "value": "1080px" },
+      { "name": "grid-collapse", "value": "960px" },
+      { "name": "nav-menu", "value": "880px" },
+      { "name": "compare-reflow", "value": "720px" },
+      { "name": "single-column", "value": "640px" },
+      { "name": "compact", "value": "560px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Forest pill with ivory text; deepens to Forest Deep on hover. One per view region.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Agendar una charla</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 26px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.2; text-decoration: none; border: 1.5px solid transparent; border-radius: 999px; cursor: pointer; transition: background-color .2s cubic-bezier(0.16,1,0.3,1), color .2s cubic-bezier(0.16,1,0.3,1), border-color .2s cubic-bezier(0.16,1,0.3,1); } .ds-btn-primary { background: #3F6B52; color: #F3F0E9; } .ds-btn-primary:hover { background: #345A45; } .ds-btn:focus-visible { outline: 2px solid #3F6B52; outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "1.5px Forest pill outline; fills Forest on hover. Secondary doors (investor callout).",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Hablar sobre inversión</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 26px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.2; text-decoration: none; color: #3F6B52; background: transparent; border: 1.5px solid #3F6B52; border-radius: 999px; transition: background-color .2s cubic-bezier(0.16,1,0.3,1), color .2s cubic-bezier(0.16,1,0.3,1); } .ds-btn-outline:hover { background: #3F6B52; color: #F3F0E9; } .ds-btn-outline:focus-visible { outline: 2px solid #3F6B52; outline-offset: 3px; }"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "link-arrow",
+      "description": "Forest text with a 1.5px currentColor underline and an arrow that nudges on hover.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\"><span>Cómo trabajamos</span><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: 8px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: .9375rem; color: #3F6B52; text-decoration: none; border-bottom: 1.5px solid currentColor; padding-bottom: 2px; } .ds-link-arrow svg { transition: transform .25s cubic-bezier(0.16,1,0.3,1); } .ds-link-arrow:hover svg { transform: translateX(3px); } .ds-link-arrow:focus-visible { outline: 2px solid #3F6B52; outline-offset: 3px; }"
+    },
+    {
+      "name": "Accent Pills",
+      "kind": "chip",
+      "refersTo": "pill-forest",
+      "description": "Outline pills, text and stroke in one accent; Rose uses Rose Ink for legibility.",
+      "html": "<span class=\"ds-pills\"><span class=\"ds-pill ds-pill-forest\">En desarrollo</span><span class=\"ds-pill ds-pill-rose\">Expansión en curso</span></span>",
+      "css": ".ds-pills { display: flex; flex-wrap: wrap; gap: 10px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-pill { display: inline-flex; align-items: center; padding: 4px 12px; border: 1.5px solid currentColor; border-radius: 999px; font-size: .8125rem; font-weight: 600; line-height: 1.3; white-space: nowrap; } .ds-pill-forest { color: #3F6B52; } .ds-pill-rose { color: #A34A62; }"
+    },
+    {
+      "name": "Fee Cards (rest and active)",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Ivory cards on ivory with a 1px line border and 12px radius; the active card switches to a 2px Forest border. Gold 20px bold label.",
+      "html": "<div class=\"ds-cards\"><div class=\"ds-card\"><h3 class=\"ds-card-label\">Fee de mantenimiento</h3><p>Un honorario que cubre lo que cuesta operar.</p></div><div class=\"ds-card ds-card-active\"><h3 class=\"ds-card-label\">Equity compartido</h3><p>Si el cliente gana, todos ganamos.</p></div></div>",
+      "css": ".ds-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #2B2B2E; } .ds-card { background: #F3F0E9; border: 1px solid #DCD5C6; border-radius: 12px; padding: 28px; } .ds-card-active { border: 2px solid #3F6B52; } .ds-card-label { margin: 0 0 12px; font-size: 1.25rem; font-weight: 700; color: #A87C3F; } .ds-card p { margin: 0; line-height: 1.6; }"
+    },
+    {
+      "name": "Section Head",
+      "kind": "custom",
+      "refersTo": "section-head",
+      "description": "Numbered tracked-caps label (brand pattern 0N / SECTION), gold H2, 40x3 graphite rule.",
+      "html": "<div class=\"ds-head\"><p class=\"ds-eyebrow\"><span>01 /</span> <span>Cómo trabajamos</span></p><h2 class=\"ds-h2\">No cobramos por horas. Ganamos cuando tú ganas.</h2><span class=\"ds-rule\"></span></div>",
+      "css": ".ds-head { font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-eyebrow { display: flex; gap: 8px; margin: 0 0 20px; font-size: .75rem; font-weight: 600; line-height: 1.4; letter-spacing: .2em; text-transform: uppercase; color: #3F6B52; } .ds-h2 { margin: 0; max-width: 16ch; font-size: clamp(2.25rem, 3.8vw, 3.5rem); line-height: 1.08; font-weight: 700; letter-spacing: -0.02em; color: #A87C3F; text-wrap: balance; } .ds-rule { display: block; width: 40px; height: 3px; margin-top: 24px; background: #2B2B2E; }"
+    },
+    {
+      "name": "Hero Tab with Badge",
+      "kind": "custom",
+      "refersTo": "hero-tab",
+      "description": "Tab strip cell: solid 40px accent badge with ivory line icon, bold name, soft description, arrow that nudges; name turns Forest on hover.",
+      "html": "<a class=\"ds-tab\" href=\"#\"><span class=\"ds-badge ds-badge-rose\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M22 7 13.5 15.5l-5-5L2 17\"/><path d=\"M16 7h6v6\"/></svg></span><span class=\"ds-tab-text\"><span class=\"ds-tab-name\">Conjunction Capital</span><span class=\"ds-tab-desc\">Capital y estructura de fundraising, con acompañamiento activo.</span></span><svg class=\"ds-tab-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-tab { display: grid; grid-template-columns: auto 1fr auto; gap: 16px; align-items: start; padding: 28px 24px 28px 0; max-width: 420px; text-decoration: none; color: #2B2B2E; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; border-bottom: 1px solid #DCD5C6; } .ds-badge { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; color: #F3F0E9; } .ds-badge svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; } .ds-badge-rose { background: #B5566F; } .ds-tab-text { display: flex; flex-direction: column; gap: 4px; } .ds-tab-name { font-weight: 700; font-size: 1.0625rem; } .ds-tab-desc { font-size: .9375rem; line-height: 1.45; color: #6B6B70; } .ds-tab-arrow { width: 18px; height: 18px; margin-top: 3px; fill: none; stroke: #3F6B52; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s cubic-bezier(0.16,1,0.3,1); } .ds-tab:hover .ds-tab-name, .ds-tab:focus-visible .ds-tab-name { color: #3F6B52; } .ds-tab:hover .ds-tab-arrow { transform: translateX(4px); } .ds-tab:focus-visible { outline: 2px solid #3F6B52; outline-offset: 3px; }"
+    },
+    {
+      "name": "Compare Row",
+      "kind": "custom",
+      "refersTo": "compare-table",
+      "description": "Ruled comparison table opened by a 1px graphite rule, hairline rows, Forest tick badges on the Conjunction column.",
+      "html": "<div class=\"ds-compare\" role=\"table\"><div class=\"ds-row ds-headrow\" role=\"row\"><span></span><span class=\"ds-trad\">Consultoría tradicional</span><span class=\"ds-cje\">Conjunction</span></div><div class=\"ds-row\" role=\"row\"><span role=\"rowheader\">Plazos</span><span class=\"ds-trad\">Meses</span><span class=\"ds-cje\"><span class=\"ds-tick\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg></span><span>Semanas</span></span></div></div>",
+      "css": ".ds-compare { border-top: 1px solid #2B2B2E; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #2B2B2E; } .ds-row { display: grid; grid-template-columns: 3fr 4fr 4fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid #DCD5C6; align-items: baseline; } .ds-row [role='rowheader'] { font-weight: 700; } .ds-trad { color: #6B6B70; } .ds-cje { display: flex; gap: 12px; align-items: flex-start; font-weight: 600; } .ds-tick { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 22px; height: 22px; border-radius: 50%; background: #3F6B52; color: #F3F0E9; transform: translateY(2px); } .ds-tick svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; } .ds-headrow { padding: 14px 0; } .ds-headrow > span { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; } .ds-headrow .ds-cje { color: #3F6B52; }"
+    },
+    {
+      "name": "Details Accordion Row",
+      "kind": "custom",
+      "refersTo": "accordion",
+      "description": "Native details row: circular portrait, bold name plus soft meta, Forest-outline plus circle that fills and rotates when open.",
+      "html": "<details class=\"ds-acc\"><summary><span class=\"ds-pic\"></span><span class=\"ds-acc-title\"><span class=\"ds-acc-name\">Aaron Berneking</span><span class=\"ds-acc-meta\">Estrategia e insights</span></span><span class=\"ds-acc-icon\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></span></summary><div class=\"ds-acc-body\"><p>Descripción del especialista.</p></div></details>",
+      "css": ".ds-acc { border-bottom: 1px solid #DCD5C6; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #2B2B2E; } .ds-acc summary { display: flex; align-items: center; gap: 16px; padding: 18px 0; cursor: pointer; list-style: none; } .ds-acc summary::-webkit-details-marker { display: none; } .ds-acc summary:focus-visible { outline: 2px solid #3F6B52; outline-offset: 3px; } .ds-pic { width: 48px; height: 48px; flex: none; border-radius: 50%; background: #DCD5C6; } .ds-acc-title { flex: 1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; } .ds-acc-name { font-weight: 700; font-size: 1.125rem; } .ds-acc-meta { color: #6B6B70; font-size: .9375rem; } .ds-acc summary:hover .ds-acc-name { color: #3F6B52; } .ds-acc-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid #3F6B52; color: #3F6B52; transition: transform .35s cubic-bezier(0.16,1,0.3,1), background-color .2s, color .2s; } .ds-acc-icon svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; } .ds-acc[open] .ds-acc-icon { transform: rotate(45deg); background: #3F6B52; color: #F3F0E9; } .ds-acc-body { padding: 0 48px 24px 64px; max-width: 76ch; color: #6B6B70; }"
+    },
+    {
+      "name": "Form Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Ivory field, 8px radius, field-stroke border; Forest border plus soft Forest halo on focus; Old Rose stroke and Rose Ink message when invalid.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email</label><input id=\"ds-email\" type=\"email\" aria-invalid=\"false\"><span class=\"ds-error\">Escribe un email válido.</span></div>",
+      "css": ".ds-field { font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #2B2B2E; } .ds-field label { display: block; font-size: .875rem; font-weight: 600; margin-bottom: 8px; } .ds-field input { width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid #8C8474; border-radius: 8px; background: #F3F0E9; font: inherit; font-size: 1rem; caret-color: #3F6B52; transition: border-color .2s, box-shadow .2s; } .ds-field input:hover { border-color: #6B6B70; } .ds-field input:focus { outline: none; border-color: #3F6B52; box-shadow: 0 0 0 3px rgba(63, 107, 82, .22); } .ds-field input[aria-invalid='true'] { border-color: #B5566F; } .ds-error { display: block; margin-top: 6px; font-size: .8125rem; font-weight: 600; color: #A34A62; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Ivory Linen Ledger",
+    "overview": "This is the client's pinned brand system (`Conjunction-Ecosystems-Web-Brand-Design.md`, extracted from the reference deck) applied to a large-firm consulting homepage. The whole page stays on one warm ivory ground, with no pure white, no pure black and no dark blocks. Credibility comes from restraint. Gold headlines set large and tight carry the voice. Forest and Old Rose alternate as the only chromatic accents, and a single grotesque (Archivo) does all the work. Emphasis comes from a colored border or colored text. Filled panels are never used for emphasis.\n\nThe page is editorial, not a dashboard. It follows the brand's 60 / 30 / 10 split of space, content and accent: wide gutters, a large vertical section rhythm, and sections separated by 1px hairlines. Inside a section, content sits either in hairline-ruled rows (comparison table, services, accordions, platform list) or in ivory cards with a thin border. Cards are never a different fill from the page. Every content section opens with a numbered tracked-caps label, a gold headline and a short graphite rule.\n\nMotion is spent on one moment. On load, the hero headline lines rise in sequence and the hero photo reveals top-down through a clip-path. Everything else is short state feedback: nav underlines drawing in, arrows nudging, a hairline appearing under the header on scroll, portraits returning to color. Reduced motion removes all of it. (The direction contract described a header turning white and a scale-in photo. The build keeps the header ivory and adds only a hairline, and it reveals the photo with a clip rather than a scale. The build is the record.)",
+    "keyCharacteristics": [
+      "Ivory Linen ground everywhere, with Graphite text. No `#FFFFFF`, no `#000000`, and no dark fills in UI.",
+      "Gold for headlines and large key phrases only. Forest and Rose alternate across sets, one accent per element.",
+      "One family, Archivo 400–800. Headlines are bold with negative tracking. Labels are small tracked caps.",
+      "Numbered section labels (\"0N / SECTION\"), a gold H2, and a 40×3 graphite rule under it.",
+      "Ivory cards with a 1px `line` border and 12px radius. The active state is a 2px Forest border.",
+      "Pills everywhere a shape is interactive or a tag: buttons, tags, the language toggle, the skip link.",
+      "Flat. The only shadow in the system is the focus halo on form fields."
+    ],
+    "rules": [
+      { "name": "The No Black, No White Rule", "body": "The ground is always Ivory Linen and dark text is always Graphite. Neither `#FFFFFF` nor `#000000` appears in UI. Third-party artwork is content, not UI: the Tropical Trash logo keeps its own black ground inside an 8px-radius frame.", "section": "colors" },
+      { "name": "The Gold Is Large Rule", "body": "Gold text appears only at 24px or larger, or 18.66px or larger in bold (large text, 3.3:1). That covers the H1, H2, gold H3, 20px bold card and callout labels, and the 24px hero lede phrase. Gold is never a button, a fill, a border or small text.", "section": "colors" },
+      { "name": "The Ink Variant Rule", "body": "Rose text at small sizes always uses Rose Ink (#A34A62). Old Rose (#B5566F) stays for fills, icon strokes and markers.", "section": "colors" },
+      { "name": "The One Accent Per Element Rule", "body": "Each pill, badge, icon, card and eyebrow takes one accent, Forest or Rose. Across a set (hero tabs, values, service rows, platform items, section eyebrows) they alternate Forest, Rose, Forest.", "section": "colors" },
+      { "name": "The One Family Rule", "body": "Archivo is the only typeface. Hierarchy comes from size, weight and color, never from a second face.", "section": "typography" },
+      { "name": "The Color Not Weight Rule", "body": "Emphasis inside running text switches color (gold at large sizes, Forest otherwise) at the same weight, as the hero lede does.", "section": "typography" },
+      { "name": "The Numbered Label Rule", "body": "Every content section opens with a label in the pattern \"0N / SECTION\" (tracked caps, 12px, 600). It is set in Forest or Rose Ink, alternating by section, and sits above the gold H2. This is the brand file's own eyebrow pattern and it is intentional. The hero uses the unnumbered tagline format (middle-dot separated, graphite-soft), and group labels inside a section (Personas, Empresas aliadas) sit on a 1px graphite rule.", "section": "typography" },
+      { "name": "The Short Rule Rule", "body": "A 40×3px graphite bar sits 24px under the headline in the hero and in every section head. It is a mark, never a full underline.", "section": "typography" },
+      { "name": "The Wide Margin Rule", "body": "When a section feels crowded, remove content or add space before adding color or a container (60 / 30 / 10).", "section": "layout" },
+      { "name": "The Border Not Fill Rule", "body": "Emphasis raises a border, never a surface. An active card goes from 1px `line` to 2px Forest, and no card, section or button is ever filled dark for contrast.", "section": "elevation" },
+      { "name": "The Open Ring Rule", "body": "The C mark is Forest on top and Rose on the bottom, with the gap on the right. It is never closed and never recolored.", "section": "shapes" }
+    ],
+    "dos": [
+      "**Do** keep every surface on Ivory Linen (#F3F0E9) and every dark text in Graphite (#2B2B2E).",
+      "**Do** set gold only at 24px or larger, or 18.66px or larger in bold. Use it for headlines, sub-titles, card labels and large key phrases.",
+      "**Do** use Rose Ink (#A34A62) for any rose text, and Old Rose (#B5566F) only for fills, strokes and markers.",
+      "**Do** alternate Forest and Rose across a set, with one accent per element.",
+      "**Do** open content sections with \"0N / SECTION\", a gold H2 and the 40×3 graphite rule.",
+      "**Do** show emphasis with a 2px Forest border on an ivory card, or with colored text.",
+      "**Do** use pill buttons: Forest fill with Forest Deep hover, or a 1.5px Forest outline.",
+      "**Do** separate sections and rows with 1px `line` hairlines, and open tables and lists with a 1px graphite rule.",
+      "**Do** keep motion to the hero entrance plus short state feedback, and honor reduced motion.",
+      "**Do** frame photography at 12px radius, and warm cool skies toward the ivory."
+    ],
+    "donts": [
+      "**Don't** use `#FFFFFF` or `#000000` in UI. Third-party logo art keeps its own ground as content only.",
+      "**Don't** fill a card, button, band or section with a dark color for contrast.",
+      "**Don't** use gold as a button, fill, border or small text.",
+      "**Don't** set Old Rose (#B5566F) as small text.",
+      "**Don't** mix Forest and Rose inside one element, except the two-tone C ring.",
+      "**Don't** add shadows beyond the field focus halo.",
+      "**Don't** add a second typeface.",
+      "**Don't** use filled or solid icons outside the circular badges.",
+      "**Don't** use AI or sci-fi imagery (robots, neural nets, particles, glow)."
+    ]
+  },
+  "knownGaps": [
+    "Partner/specialist portraits and the Live-Act logo are low-res legacy extracts (320px / small) pending originals.",
+    "CPC section (with video) and internal pages are not built yet; extend with the components above.",
+    "Field Stroke #8C8474 measures about 1.9:1 on ivory, below the 3:1 non-text target; recorded as shipped, not as a proven value.",
+    "Language toggle pressed state fills Graphite, which the brand file bans as a fill; not canonized.",
+    "Specialist accordions mix a Forest toggle with Old Rose list bullets inside one element; not canonized."
+  ]
+}

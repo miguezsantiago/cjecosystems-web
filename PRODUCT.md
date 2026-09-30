@@ -52,7 +52,10 @@ Core concept requested by the partner for the new home: **fusing the AI era with
 - Voice: direct, confident, anti-bureaucratic consulting; addresses the reader as "tú".
 - **Do not name other firms in claims.** The current headline "El rigor de McKinsey. La velocidad de un founder." is to be rewritten without referencing McKinsey or any other brand, keeping the idea (big-firm rigor + founder speed).
 - Reference sites named by the user (EY, Globant, Consultatio, McKinsey) signal the level of professionalism wanted; they are not to be imitated or cited.
-- The previous visual identity (ivory/forest/rose/gold, Archivo) is not binding; the redesign replaces it.
+- **Binding brand system (2026-09-29):** `Conjunction-Ecosystems-Web-Brand-Design.md` (extracted from `Conjunction_Ecosystems_Concept.pptx`) is the brand authority: Ivory Linen / Graphite / Forest / Old Rose / Antique Gold, Archivo, open two-tone "C" ring mark, 60/30/10 composition, no pure black/white, no dark fills. It supersedes the navy/marigold palette of the first home build (2026-09-24). The user notes the spec may be slightly off in places; treat it as close guidance and flag conflicts.
+- Imagery: corporate city photography is liked, recalibrated brighter (2026-09-29).
+- **Standing preference (2026-09-24):** the user chose the consulting category standard over unconventional visual worlds. EY, Globant, Consultatio and McKinsey set the craft bar; conventions are to be executed at full quality, not subverted.
+- Avoid AI/sci-fi imagery (robots, neural networks, particles, glow).
 
 ## Evidence on Hand
 
