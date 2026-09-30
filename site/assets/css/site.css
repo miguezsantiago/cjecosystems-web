@@ -477,7 +477,62 @@ a { color: inherit; }
 .js [data-reveal].is-in { opacity: 1; transform: none; }
 
 /* =========================================================
-   Fallback: móvil y reduced motion — sin scrub, todo visible
+   Móvil (<= 880px): las mismas tres escenas, recompuestas para pantalla chica
+   ========================================================= */
+@media (max-width: 880px) {
+  /* Intro */
+  .intro { height: 220vh; }
+  .intro-type { padding: 0 var(--pad) 12vh; }
+  .mega { font-size: clamp(2.6rem, 12.6vw, 4.25rem); line-height: .98; }
+  .mega-line { white-space: normal; }
+  .window { width: 2.3em; height: .8em; vertical-align: -0.1em; }
+  .intro-over { bottom: 24px; }
+  .over-lede { font-size: clamp(1.625rem, 7.4vw, 2.25rem); }
+  .over-body { font-size: 1rem; margin-top: 12px; }
+  .over-actions { margin-top: 20px; gap: 14px 22px; }
+  .over-actions .btn-lg { min-height: 50px; padding: 12px 24px; font-size: 1rem; }
+
+  /* Mecanismo: diagrama arriba, un paso a la vez abajo */
+  .mech { height: 420vh; }
+  .mech-stage {
+    grid-template-columns: 1fr; grid-template-rows: auto auto minmax(0, 1fr) auto;
+    align-items: start; align-content: stretch; gap: 10px;
+    padding-top: 20px; padding-bottom: 24px;
+  }
+  .mech-copy { display: contents; }
+  .mech-copy .kicker { order: 1; }
+  .mech-copy .h2 { order: 2; margin: 4px 0 0; font-size: clamp(1.5rem, 6.4vw, 2rem); }
+  .mech-diagram { order: 3; max-width: none; height: 100%; min-height: 0; max-height: none; }
+  .diagram { width: 100%; height: 100%; max-height: 100%; }
+  .diagram text { font-size: 21px; }
+  .node text { font-size: 20px; }
+  .core-label, .orbit-label { font-size: 22px !important; }
+  .steps { order: 4; position: relative; min-height: 118px; border-left: 0; }
+  .step { position: absolute; inset: 0 0 auto 0; padding: 0; opacity: 0; transform: translateY(14px); transition: opacity .45s var(--ease), transform .45s var(--ease); }
+  .step::before { display: none; }
+  .step p { max-height: none; }
+  .mech[data-step="0"] .step[data-s="0"],
+  .mech[data-step="1"] .step[data-s="1"],
+  .mech[data-step="2"] .step[data-s="2"],
+  .mech[data-step="3"] .step[data-s="3"],
+  .mech[data-step="4"] .step[data-s="4"] { opacity: 1; transform: none; }
+
+  /* Líneas: paneles verticales que se deslizan en horizontal */
+  .lines-stage { gap: 18px; justify-content: center; }
+  .lines-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .lines-head .h2 { font-size: clamp(1.625rem, 7vw, 2.25rem); margin-top: 6px; }
+  .track { gap: 14px; }
+  .panel { width: 84vw; height: min(62svh, 540px); grid-template-columns: 1fr; grid-template-rows: 44% minmax(0, 1fr); }
+  .panel-body { padding: 20px; gap: 10px; justify-content: flex-start; }
+  .panel-tag { font-size: clamp(2.5rem, 12vw, 3.25rem); }
+  .panel-title { font-size: 1.125rem; }
+  .panel-body > p:last-child { font-size: .9375rem; }
+  .panel-end { width: 84vw; gap: 22px; padding: 0 12px; }
+  .end-line { font-size: clamp(1.5rem, 7vw, 2rem); }
+}
+
+/* =========================================================
+   Fallback: reduced motion — sin scrub, todo visible
    ========================================================= */
 .static .intro, .static .mech, .static .lines { height: auto; }
 .static .intro-stage, .static .mech-stage, .static .lines-stage { position: static; height: auto; overflow: visible; }

@@ -1,6 +1,6 @@
 /* Conjunction Ecosystems — site.js
-   1. Animaciones ligadas al scroll (intro, mecanismo, líneas). En móvil (<= 880px)
-      o con reduced motion la página queda estática (clase .static).
+   1. Animaciones ligadas al scroll (intro, mecanismo, líneas), en escritorio y en móvil.
+      Con reduced motion la página queda estática (clase .static).
    2. Header, menú móvil, nav activo, apariciones, formulario. */
 (function () {
   'use strict';
@@ -74,7 +74,7 @@
   }
 
   function setMode() {
-    var isStatic = mqSmall.matches || mqReduce.matches;
+    var isStatic = mqReduce.matches;
     root.classList.toggle('static', isStatic);
     if (isStatic) {
       if (video) video.style.removeProperty('--clip');
