@@ -220,6 +220,47 @@
     });
   }
 
+  /* =================== Proyectos: un detalle abierto a la vez =================== */
+  var pgrid = document.querySelector('[data-projects]');
+  if (pgrid) {
+    var cards = Array.prototype.slice.call(pgrid.querySelectorAll('.pcard'));
+    var panelOf = function (card) { return document.getElementById(card.getAttribute('aria-controls')); };
+    var closeAll = function () {
+      cards.forEach(function (card) {
+        card.setAttribute('aria-expanded', 'false');
+        var panel = panelOf(card);
+        if (panel) panel.hidden = true;
+      });
+    };
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        var wasOpen = card.getAttribute('aria-expanded') === 'true';
+        closeAll();
+        if (wasOpen) return;
+        var panel = panelOf(card);
+        if (!panel) return;
+        card.setAttribute('aria-expanded', 'true');
+        panel.hidden = false;
+        requestAnimationFrame(function () {
+          panel.scrollIntoView({ block: 'nearest', behavior: mqReduce.matches ? 'auto' : 'smooth' });
+        });
+      });
+    });
+    pgrid.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-pclose]');
+      if (!btn) return;
+      var panel = btn.closest('.pdetail');
+      var owner = cards.filter(function (card) { return card.getAttribute('aria-controls') === panel.id; })[0];
+      closeAll();
+      if (owner) owner.focus();
+    });
+    pgrid.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      var open = cards.filter(function (card) { return card.getAttribute('aria-expanded') === 'true'; })[0];
+      if (open) { closeAll(); open.focus(); }
+    });
+  }
+
   var year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
 

@@ -80,3 +80,14 @@ All from the current live site (`cjecosystems.com`); reuse, do not embellish.
 ## Accessibility & Inclusion
 
 Bilingual ES/EN parity is required for all content. The current site already honors `prefers-reduced-motion` and visible focus states; keep both, including for any hero video.
+
+## Partner update (2026-09-30, brief from Gustavo)
+
+- **Headline:** "Estrategia para el mundo que viene." replaces "Consultoría estratégica para la era de la IA."
+- **Copy rule:** do not mention AI literally in any new copy. Existing mentions (mechanism step C, the diagram's "IA" orbit, "potenciados por IA" in the hero overlay and meta description) were left in place and flagged to the partner.
+- **Plural:** "socios sénior", never "un socio senior".
+- **Exact line:** "No armamos un equipo de consultoría. Armamos el proyecto que tú necesitas."
+- **Commercial model:** no longer stated as always fee + shared equity. It is assessed case by case: shared profits + fee, only fee, fee + equity, or only equity, depending on how each project fits the ecosystem. Do not write "shared equity" / "equity compartido".
+- **Projects:** shown as a card grid (name, sector, location, CJE line, status) with one expandable detail open at a time. Five projects: ROCCA (Conjunction Strategy), B•Joung Hair Studio (Conjunction Strategy, in progress; Instagram and AgendaPro booking links), Bamboo Global, Tropical Trash and Live-Act. The sectors for the last three were inferred and their CJE line is undefined.
+- **Pending material (published in a neutral form):** partner photos (initials shown), the team lead paragraph (hidden), the B•Joung vector logo (name set in type on ivory, never its violet-cyan gradient) and 2–3 B•Joung salon photos (gallery hidden).
+
