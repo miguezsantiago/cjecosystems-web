@@ -347,6 +347,7 @@ a { color: inherit; }
 .pcard-logo { border: 1px solid var(--line); background: var(--ivory); }
 .pcard-logo img { max-height: 96px; width: auto; max-width: 64%; object-fit: contain; }
 .pcard-logo .logo-art { border-radius: 8px; }
+.pcard-logo .logo-blend { max-height: 124px; clip-path: circle(41%); }
 .plogo-text { display: flex; flex-direction: column; align-items: center; font-size: 1.875rem; font-weight: 700; font-stretch: 108%; letter-spacing: -0.02em; line-height: 1; color: var(--graphite); }
 .plogo-text span { margin-top: 8px; font-size: .6875rem; font-weight: 600; font-stretch: 100%; letter-spacing: .24em; text-transform: uppercase; color: var(--graphite-soft); }
 .pcard-name { font-size: clamp(1.5rem, 2vw, 1.875rem); line-height: 1.1; font-weight: 700; font-stretch: 108%; letter-spacing: -0.02em; }
@@ -426,7 +427,8 @@ a { color: inherit; }
 .callout p { margin-top: 8px; max-width: 62ch; }
 
 /* ---------- Equipo ---------- */
-.partners { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px clamp(32px, 4vw, 64px); }
+.partners { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px clamp(28px, 3vw, 56px); }
+@media (max-width: 1200px) { .partners { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .partner { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .portrait { display: block; flex: none; width: 100%; max-width: 200px; aspect-ratio: 1; border-radius: 50%; overflow: hidden; background: var(--line); }
 .portrait img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); filter: grayscale(1) sepia(.12) contrast(1.02); transition: filter .5s var(--ease); }
