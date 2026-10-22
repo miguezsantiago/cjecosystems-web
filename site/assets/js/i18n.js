@@ -202,9 +202,7 @@
       'net.aj.l1': 'Co-founder of Turnstyle Solutions, acquired by Yelp in 2018 for USD 20M.',
       'net.aj.l2': 'Wireless networks across 500+ locations (Yum Brands, Subway, Cara Foods, Pernod Ricard).',
       'net.aj.l3': 'IoT network of 400+ irrigation sensors across 50+ vineyards in Napa, Sonoma and California.',
-      'net.aj.l4': 'City-wide public WiFi in London, Ontario, still active today.',
-      'net.pm.tag': 'Product design and strategy',
-      'net.pm.p': 'Product design and strategy for AI-powered, data-driven digital products focused on conversion and growth.',
+      'net.aj.l4': 'City-wide public WiFi in London, Ontario, still active today.',
       'net.mk.tag': 'Creative direction and branding',
       'net.mk.l1': 'Nearly 15 years in creative direction and brand development: campaigns and multi-platform content.',
       'net.mk.l2': 'Creative Director at Tropical Trash and co-founder of The Creative Hotline.',
