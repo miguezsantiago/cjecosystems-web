@@ -187,6 +187,7 @@
       'team.role': 'Partner',
       'team.gr.bio': '10 years of experience across corporate finance and management consulting, with 20+ infrastructure, manufacturing and pharma projects for international clients. Formerly at IDOM, Sanofi and EY. MSc in Digital Project Management and Consulting from ESCP Business School.',
       'team.st.bio': 'CEO of ePlata Mexico, leading its regional expansion in money transfers and multi-currency digital wallets. Over a decade in financial services and corporate law, focused on financial inclusion.',
+      'team.hf.bio': 'Leads growth, commercial strategy and cross-functional teams across international markets. Works at the intersection of cybersecurity, digital identity and enterprise transformation in Latin America and the U.S. Nearly a decade as an Australian diplomat, with a background spanning fintech, infrastructure and government.',
       'team.mg.bio': 'Founder of Kitsune Law, with nearly a decade in corporate law, venture law and venture capital. Guides growing companies through complex legal and regulatory structures.',
 
       'net.title': 'The specialists',
