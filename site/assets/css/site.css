@@ -347,6 +347,7 @@ a { color: inherit; }
 .pcard-logo { border: 1px solid var(--line); background: var(--ivory); }
 .pcard-logo img { max-height: 96px; width: auto; max-width: 64%; object-fit: contain; }
 .pcard-logo .logo-art { border-radius: 8px; }
+.pcard-logo .logo-blend { max-height: 124px; clip-path: circle(41%); }
 .plogo-text { display: flex; flex-direction: column; align-items: center; font-size: 1.875rem; font-weight: 700; font-stretch: 108%; letter-spacing: -0.02em; line-height: 1; color: var(--graphite); }
 .plogo-text span { margin-top: 8px; font-size: .6875rem; font-weight: 600; font-stretch: 100%; letter-spacing: .24em; text-transform: uppercase; color: var(--graphite-soft); }
 .pcard-name { font-size: clamp(1.5rem, 2vw, 1.875rem); line-height: 1.1; font-weight: 700; font-stretch: 108%; letter-spacing: -0.02em; }

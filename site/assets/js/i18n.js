@@ -157,6 +157,9 @@
       'pj.bj.s5': 'Organization and talent',
       'pj.bj.s6': 'Operations and customer experience',
       'pj.bj.s7': 'Brand, reputation and relaunch',
+      'pj.hype.sector': 'Experiences, hospitality & culture',
+      'pj.hype.tag': 'Experiences · Mexico City',
+      'pj.hype.desc': 'A creative experiences studio in Mexico City working across hospitality, culture, food and music: its own events such as Sin Señal and Café Cerrero, custom experiences for groups and venues, and full programming for restaurants, galleries and venues.',
       'proj.title': 'Projects in the ecosystem.',
       'proj.lead': 'Companies and projects where Conjunction is actively involved, not only as an advisor but as a partner.',
       'proj.rocca.status': 'In development',
@@ -182,7 +185,7 @@
       'team.title': 'Partners who lead. Specialists who execute.',
       'team.lead': 'Each partner is both an expert and a project director. You always work with someone experienced, never an intermediary.',
       'team.role': 'Partner',
-      'team.gr.bio': 'MSc in Digital Project Management and Consulting from ESCP Business School. Former consultant at IDOM, with experience in business strategy, client management and process optimization in investment projects.',
+      'team.gr.bio': '10 years of experience across corporate finance and management consulting, with 20+ infrastructure, manufacturing and pharma projects for international clients. Formerly at IDOM, Sanofi and EY. MSc in Digital Project Management and Consulting from ESCP Business School.',
       'team.st.bio': 'CEO of ePlata Mexico, leading its regional expansion in money transfers and multi-currency digital wallets. Over a decade in financial services and corporate law, focused on financial inclusion.',
       'team.mg.bio': 'Founder of Kitsune Law, with nearly a decade in corporate law, venture law and venture capital. Guides growing companies through complex legal and regulatory structures.',
 
