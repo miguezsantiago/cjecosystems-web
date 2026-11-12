@@ -107,3 +107,28 @@ An outside reviewer with a VC background sent feedback to Gustavo. Santiago appr
 - one concrete example of what AI does in an engagement, which conflicts with the earlier "no literal AI" rule, so align it with Gustavo first;
 - one finished project with a result metric.
 
+
+## Partner decks read (2026-11-12)
+
+Source: two internal decks, "Partner Briefing · Nov 12, 2026" and "Investor Presentation v9". Both are marked confidential and are git-ignored (`*.pptx`). Only the facts below were taken to the site.
+
+**Applied to the site:**
+- **Five partners.** Patricio Heftye joins as Partner & Chief of Staff (ex IDOM, M&A and strategy; runs delivery and operations). Gustavo is Founding & Managing Partner. Hamish's surname is confirmed as Fraser.
+- **Partner dedication** (closes the reviewer's open item): Gustavo and Patricio lead every project full-time; Sebastián, Michael and Hamish join on finance, law and growth. This is now the team lead paragraph.
+- **Sebastián Tena:** built ePlata over ten years and exited in 2025; now CEO of Mexas Wallet. He is no longer CEO of ePlata.
+- **CJE line per project:** ROCCA and B•Joung are Strategy; Tropical Trash, Live-Act and Bamboo Global are Studio. Hype Productions is not in the decks, so its line stays undefined.
+- **Strategy deliverables** follow the decks' service menu. Capital lists structuring and valuation, round execution and investor relations.
+- **Location:** Mexico City. The decks give an office address (Av. Coyoacán 1120); it is not published until Gustavo confirms.
+
+**Do not publish (confidential or regulated):**
+- CJE's own round, valuation, cap table, projections and partner compensation.
+- The fund-placement mandate and its prospect list; "investor matching" and "fund placement" as services, pending Michael's regulatory check.
+- Raise amounts and terms of client projects (LENGUA, Casa Pickle, TT Water) and ROCCA unit data.
+- Accounts not yet on the site: LENGUA, Casa Pickle, Noonrise, BESS Puebla. Add them only with Gustavo's go-ahead and without raise data.
+
+**Still open:**
+- CJE has not billed a project yet, so there is no finished project with a result metric. Never present open accounts as results.
+- AI wording: the investor deck says "senior partners + AI"; the partner briefing drops AI from the line descriptions and says technology only keeps the firm agile. The site's AI mentions are unchanged.
+- Hamish's years as a diplomat differ between sources (seven in the deck, "nearly a decade" in his LinkedIn text), so the site now says "former Australian diplomat" with no number.
+- Patricio's LinkedIn URL. A "fees + revenue share" and "revenue share only" model exists in the decks; the site keeps Gustavo's four collaboration models.
+- A possible fourth line (modernizing established companies) is under evaluation; not on the site.

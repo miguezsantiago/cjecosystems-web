@@ -11,6 +11,9 @@ desktop.ini
 *.tmp
 ~$*
 
+# Presentaciones internas (confidenciales, no van al repo)
+*.pptx
+
 # Editor
 .vscode/
 node_modules/
