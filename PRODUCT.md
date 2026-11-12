@@ -91,3 +91,19 @@ Bilingual ES/EN parity is required for all content. The current site already hon
 - **Projects:** shown as a card grid (name, sector, location, CJE line, status) with one expandable detail open at a time. Five projects: ROCCA (Conjunction Strategy), B•Joung Hair Studio (Conjunction Strategy, in progress; Instagram and AgendaPro booking links), Bamboo Global, Tropical Trash and Live-Act. The sectors for the last three were inferred and their CJE line is undefined.
 - **Pending material (published in a neutral form):** partner photos (initials shown), the team lead paragraph (hidden), the B•Joung vector logo (name set in type on ivory, never its violet-cyan gradient) and 2–3 B•Joung salon photos (gallery hidden).
 
+## External review applied (2026-11-12)
+
+An outside reviewer with a VC background sent feedback to Gustavo. Santiago approved acting on the items that need no new information:
+
+- **Consulting leads.** "Qué hacemos" now reads "Consultoría al centro. Capital e incubación cuando suman." Strategy carries its deliverables, and Capital and Studio are complementary lines.
+- **Capital line:** "Conjunction Capital — Estructura de capital", meaning helping projects structure and raise capital. Never call it "venture capital" and never imply CJE's own money or check sizes.
+- **Regulatory caution:** removed the investor call-to-action, the "invest in a project" form option and ROCCA's sales data (units, availability, sizes, delivery date) until Michael Greenblatt confirms the position with the CNBV. Do not re-add investment offers without that confirmation.
+- **Removed:** the "Próximamente" platform section, and the mission, vision and values section. Nosotros is now one purpose sentence, with no Gen Z/millennial framing.
+- **Single tagline:** "El rigor de una firma grande, a la velocidad de un founder." in the page title, the social preview and the footer. The hero H1 stays "Estrategia para el mundo que viene."
+- **Collaboration models in Spanish:** Utilidades compartidas + fee · Solo fee · Fee + equity · Solo equity.
+
+**Open items that need data from Gustavo, never to be invented:**
+- how much time each partner gives a project, given that Sebastián runs ePlata and Michael runs Kitsune Law;
+- one concrete example of what AI does in an engagement, which conflicts with the earlier "no literal AI" rule, so align it with Gustavo first;
+- one finished project with a result metric.
+
