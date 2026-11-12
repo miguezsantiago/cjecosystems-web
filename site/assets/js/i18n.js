@@ -112,10 +112,15 @@
       'svc.lead': "Strategy, capital and incubation don't compete with each other: they feed each other within the same network of clients and projects.",
       'svc.s1.kind': 'Strategy and management consulting',
       'svc.s1.desc': "A senior partner in charge, not a junior team learning on your budget. We help you decide what to do and back it with numbers.",
-      'svc.s1.i1': 'Strategic diagnostics',
-      'svc.s1.i2': 'Financial models',
-      'svc.s1.i3': 'Project finance',
-      'svc.s1.i4': 'PMO and project management',
+      'svc.s1.i1': 'Business and growth strategy',
+      'svc.s1.i2': 'Financial models and project finance',
+      'svc.s1.i3': 'Fundraising strategy and pitch decks',
+      'svc.s1.i4': 'Go-to-market and market sizing',
+      'svc.s1.i5': 'Organisation design and scaling',
+      'svc.s1.i6': 'PMO for key projects',
+      'ln.s2.i1': 'Deal structuring and valuation',
+      'ln.s2.i2': 'Round execution',
+      'ln.s2.i3': 'Investor relations',
       'svc.s2.kind': 'Venture capital',
       'svc.s2.desc': 'Capital and fundraising structure for projects that have already validated something real, with active involvement, not just a check.',
       'svc.s2.i1': 'Fundraising structure',
@@ -182,12 +187,15 @@
       'inv.p': "Direct investment in the equity of ecosystem projects will open in a later stage. In the meantime, write to us and we'll tell you how to take part.",
 
       'team.title': 'Partners who lead. Specialists who execute.',
-      'team.lead': 'Each partner is both an expert and a project director. You always work with someone experienced, never an intermediary.',
+      'team.lead': 'Gustavo and Patricio lead every project full-time. Sebastián, Michael and Hamish join on finance, law and growth, and the specialist network comes in as each project requires.',
       'team.role': 'Partner',
+      'team.role.gr': 'Founding & Managing Partner',
+      'team.role.ph': 'Partner & Chief of Staff',
+      'team.ph.bio': "M&A advisory and strategy consulting, with experience in corporate finance, strategy and operations. Formerly at IDOM. Runs delivery and operations across Conjunction's three lines.",
       'team.gr.bio': '10 years of experience across corporate finance and management consulting, with 20+ infrastructure, manufacturing and pharma projects for international clients. Formerly at IDOM, Sanofi and EY. MSc in Digital Project Management and Consulting from ESCP Business School.',
-      'team.st.bio': 'CEO of ePlata Mexico, leading its regional expansion in money transfers and multi-currency digital wallets. Over a decade in financial services and corporate law, focused on financial inclusion.',
-      'team.hf.bio': 'Leads growth, commercial strategy and cross-functional teams across international markets. Works at the intersection of cybersecurity, digital identity and enterprise transformation in Latin America and the U.S. Nearly a decade as an Australian diplomat, with a background spanning fintech, infrastructure and government.',
-      'team.mg.bio': 'Founder of Kitsune Law, with nearly a decade in corporate law, venture law and venture capital. Guides growing companies through complex legal and regulatory structures.',
+      'team.st.bio': 'Spent ten years building ePlata, a money-transfer and multi-currency digital wallet company, through its sale in 2025. Now CEO of Mexas Wallet. A lawyer by training, with a career in payments, financial services and corporate law.',
+      'team.hf.bio': 'Leads growth, commercial strategy and cross-functional teams across international markets. Works at the intersection of cybersecurity, digital identity and enterprise transformation in Latin America and the U.S. A former Australian diplomat, with a background spanning fintech, infrastructure and government.',
+      'team.mg.bio': 'Founder of Kitsune Law in New York, with nearly a decade in corporate law, venture law and venture capital. Guides growing companies through complex legal and regulatory structures.',
 
       'net.title': 'The specialists',
       'net.p1': "We don't keep a fixed structure waiting for work. Each project builds its own team with professionals who have solved that problem before, and who come in only for the stretch where they're needed.",
@@ -241,7 +249,7 @@
       'form.err.message': 'Tell us briefly how we can help.',
 
       'footer.tag': 'The rigor of a major firm, at the speed of a founder.',
-      'footer.city': 'Mexico',
+      'footer.city': 'Mexico City',
       'footer.photo': 'Photography and video: Pexels'
     }
   };
